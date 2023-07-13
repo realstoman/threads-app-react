@@ -15,8 +15,8 @@ import Post from '@/components/Post';
 
 export default function Home() {
 	return (
-		<main className="container mx-auto min-h-screen max-w-3xl min-w-xl pt-5 pb-16 bg-slate-900">
-			<div className="flex flex-col items-center">
+		<main className="mx-auto min-h-screen max-w-lg sm:max-w-4xl pt-5 pb-16 bg-slate-900">
+			<div className="flex flex-col items-center overflow-y-scroll">
 				<header className="flex justify-center pt-3 pb-3">
 					<Image src={Logo} width={40} height={40} alt="Logo" />
 				</header>
@@ -24,13 +24,12 @@ export default function Home() {
 				<div>
 					{/* Single Dynamic Post */}
 					<Post
-						avatar={ZuckAvatar}
+						avatar={StomanAvatar}
 						username="zuck"
-						postContent="70 million sign ups on Threads as of this
-									morning. Way beyond our expectations."
+						postContent="70 million sign ups on Threads as of this morning. Way beyond our expectations."
 						publishTime="10m"
-						replies="18,257"
-						likes="104,352"
+						totalReplies="18,257"
+						totalLikes="104,352"
 						isLiked={true}
 						isVerified={true}
 						mentions=""

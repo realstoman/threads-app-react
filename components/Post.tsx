@@ -20,8 +20,8 @@ interface PostType {
 	mentions?: string;
 	isLiked?: boolean;
 	carousel?: [] & any;
-	replies?: string;
-	likes?: string;
+	totalReplies?: string;
+	totalLikes?: string;
 }
 
 const Post = ({
@@ -33,11 +33,11 @@ const Post = ({
 	mentions,
 	isLiked,
 	carousel,
-	replies,
-	likes,
+	totalReplies,
+	totalLikes,
 }: PostType) => {
 	return (
-		<div className="flex px-4 gap-3 my-4 w-full">
+		<div className="flex px-4 gap-3 my-4 w-full font-sans">
 			<div className="flex flex-col w-12 sm:w-14 min-h-full justify-between items-center shrink-0 p-0 m-0">
 				<div className="">
 					<Image
@@ -75,21 +75,23 @@ const Post = ({
 			<div className="flex flex-col w-full">
 				<div className="flex items-center justify-between">
 					<div className="flex items-center gap-2 w-full">
-						<p className="text-lg">{username}</p>
+						<p className="text-md sm:text-xl font-medium">
+							{username}
+						</p>
 						{isVerified ? (
 							<Image
 								src={BlueCheckmark}
 								width={14}
 								height={14}
 								alt="Blue Checkmark"
-								className="rounded-full"
+								className="rounded-full w-4 sm:w-5"
 							/>
 						) : (
 							''
 						)}
 					</div>
 					<div className="flex items-center gap-3">
-						<span className="text-xs text-gray-500">
+						<span className="text-xs sm:text-sm text-gray-500">
 							{publishTime}
 						</span>
 						<a href="#">
@@ -99,38 +101,38 @@ const Post = ({
 				</div>
 
 				<div className="">
-					<div className="text-xs mt-2 ">
-						{postContent}{' '}
+					<div className="mt-1.5 sm:mt-2">
+						<p className="text-xs sm:text-sm">{postContent}</p>
 						<Link href="/" className="text-blue-400">
 							{mentions}
 						</Link>
-						{carousel}
+						<div className="mt-2">{carousel}</div>
 					</div>
 
-					<div className="flex gap-4 mt-3">
-						<a href="#">
+					<div className="flex gap-4 mt-3 sm:mt-4">
+						<button type="button">
 							<FiHeart
 								className={
 									isLiked
-										? 'fill-red-600 text-red-600'
-										: 'fill-none text-gray-100'
+										? 'fill-red-600 text-red-600 sm:text-xl'
+										: 'fill-none text-gray-100 sm:text-xl'
 								}
 							/>
-						</a>
-						<a href="#">
-							<FiMessageCircle className="text-gray-100 -rotate-90" />
-						</a>
-						<a href="#">
-							<FiRepeat className="text-gray-100  -rotate-12" />
-						</a>
-						<a href="#">
-							<FiNavigation className="text-gray-100" />
-						</a>
+						</button>
+						<button type="button">
+							<FiMessageCircle className="text-gray-100 -rotate-90 sm:text-xl" />
+						</button>
+						<button type="button">
+							<FiRepeat className="text-gray-100  -rotate-12 sm:text-xl" />
+						</button>
+						<button type="button">
+							<FiNavigation className="text-gray-100 sm:text-xl" />
+						</button>
 					</div>
-					<div className="flex items-start gap-2 text-gray-500 mt-4 text-xs text-center">
-						<p>{replies} replies</p>
+					<div className="flex items-start gap-2 text-gray-500 mt-4 text-xs sm:text-[14px] text-center">
+						<p>{totalReplies} replies</p>
 						<span>.</span>
-						<p>{likes} likes</p>
+						<p>{totalLikes} likes</p>
 					</div>
 				</div>
 			</div>
