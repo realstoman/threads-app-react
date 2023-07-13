@@ -57,37 +57,41 @@ export default function Home() {
 						isLiked={false}
 						isVerified={true}
 						mentions=""
+						isReposted={true}
+						repostedBy="maiwandstoman"
 					/>
 
 					<div className="border border-gray-800"></div>
 
 					{/* Single Post */}
-					<div className="flex px-4 gap-3 my-4">
-						<div className="flex flex-col w-12 sm:w-14 min-h-full justify-between items-center shrink-0 p-0 m-0">
-							<div className="">
-								<Image
-									src={UnsplashLogo}
-									width={40}
-									height={40}
-									alt="Logo"
-									className="rounded-full"
-								/>
-							</div>
-							<div className="w-full flex flex-col justify-center items-center">
-								<Image
-									src={ZuckAvatar}
-									width={16}
-									height={16}
-									alt="Logo"
-									className="rounded-full"
-								/>
-								<Image
-									src={ZuckAvatar}
-									width={12}
-									height={12}
-									alt="Logo"
-									className="rounded-full"
-								/>
+					<div className="flex px-4 gap-8 my-4">
+						<div className="relative border-l-2 border-[#444] ml-2">
+							<div className="flex -ml-7 flex-col w-14 h-full justify-between items-center shrink-0 absolute">
+								<div className="">
+									<Image
+										src={UnsplashLogo}
+										width={40}
+										height={40}
+										alt="Logo"
+										className="rounded-full"
+									/>
+								</div>
+								<div className="w-full flex flex-col justify-center items-center">
+									<Image
+										src={ZuckAvatar}
+										width={16}
+										height={16}
+										alt="Logo"
+										className="rounded-full"
+									/>
+									<Image
+										src={ZuckAvatar}
+										width={12}
+										height={12}
+										alt="Logo"
+										className="rounded-full"
+									/>
+								</div>
 							</div>
 						</div>
 						<div className="flex flex-col w-full">
@@ -113,9 +117,13 @@ export default function Home() {
 							</div>
 
 							<div className="">
-								<div className="text-xs mt-2">
-									<p>
-										Best fruit shots of 2023. By @realstoman
+								<div className="text-xs mt-1">
+									<p className="text-gray-200">
+										Best fruit shots of 2023.{' '}
+										<span className="ml1 mr-1">📸</span> By{' '}
+										<span className="ml-1 text-blue-400">
+											@realstoman
+										</span>
 									</p>
 									<div className="mt-2 flex justify-start gap-1.5 overflow-x-scroll">
 										<Image
