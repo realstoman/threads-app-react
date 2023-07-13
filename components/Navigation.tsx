@@ -3,8 +3,8 @@ import { FiEdit, FiHeart, FiHome, FiSearch, FiUser } from 'react-icons/fi';
 
 const Navigation = () => {
 	return (
-		<div className="fixed bottom-0 left-0 z-50 w-full h-16 bg-dark">
-			<div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+		<div className="fixed bottom-0 left-0 z-50 w-full h-16 bg-[#111]">
+			<div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium bg-[#111]">
 				<Link
 					href="/"
 					className="inline-flex flex-col items-center justify-center px-5 group"

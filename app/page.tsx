@@ -14,15 +14,17 @@ import {
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between py-5">
-			<header className="">
-				<Image src={Logo} width={50} height={50} alt="Logo" />
+		<main className="container mx-auto min-h-screen max-w-3xl min-w-xl pt-5 pb-16 bg-slate-900">
+			<div className="flex flex-col items-center">
+				<header className="flex justify-center pt-3 pb-3">
+					<Image src={Logo} width={40} height={40} alt="Logo" />
+				</header>
 
-				<div className="main-content">
+				<div>
 					{/* Single Post */}
-					<div className="flex w-full px-4 gap-6">
-						<div className="flex flex-col w-20 h-full justify-between">
-							<div className="flex flex-col">
+					<div className="flex px-4 gap-3 my-4">
+						<div className="flex flex-col w-12 sm:w-14 min-h-full justify-between items-center shrink-0 p-0 m-0">
+							<div className="">
 								<Image
 									src={ZuckAvatar}
 									width={45}
@@ -31,14 +33,7 @@ export default function Home() {
 									className="rounded-full"
 								/>
 							</div>
-							<div className="flex text-left">
-								<Image
-									src={ZuckAvatar}
-									width={22}
-									height={22}
-									alt="Logo"
-									className="rounded-full"
-								/>
+							<div className="w-full flex flex-col justify-center items-center">
 								<Image
 									src={ZuckAvatar}
 									width={16}
@@ -48,15 +43,22 @@ export default function Home() {
 								/>
 								<Image
 									src={ZuckAvatar}
-									width={14}
-									height={14}
+									width={12}
+									height={12}
+									alt="Logo"
+									className="rounded-full"
+								/>
+								<Image
+									src={ZuckAvatar}
+									width={8}
+									height={8}
 									alt="Logo"
 									className="rounded-full"
 								/>
 							</div>
 						</div>
-						<div className="flex flex-col">
-							<div className="flex items-start justify-between">
+						<div className="flex flex-col w-full">
+							<div className="flex items-center justify-between">
 								<div className="flex items-center gap-2 w-full">
 									<p className="text-lg">zuck</p>
 									<Image
@@ -68,51 +70,46 @@ export default function Home() {
 									/>
 								</div>
 								<div className="flex items-center gap-3">
-									<span className="text-sm text-gray-500">
+									<span className="text-xs text-gray-500">
 										10m
 									</span>
 									<a href="#">
-										<FiMoreHorizontal className="text-gray-500" />
+										<FiMoreHorizontal className="text-gray-100" />
 									</a>
 								</div>
 							</div>
 
 							<div className="">
-								<div className="text-sm mt-2">
+								<div className="text-xs mt-2 ">
 									70 million sign ups on Threads as of this
 									morning. Way beyond our expectations.
 								</div>
 
-								<div className="flex gap-4 mt-4">
+								<div className="flex gap-4 mt-3">
 									<a href="#">
 										<FiHeart className="fill-red-600 text-red-600" />
 									</a>
 									<a href="#">
-										<FiMessageCircle className="text-gray-500" />
+										<FiMessageCircle className="text-gray-100 -rotate-90" />
 									</a>
 									<a href="#">
-										<FiRepeat className="text-gray-500" />
+										<FiRepeat className="text-gray-100  -rotate-12" />
 									</a>
 									<a href="#">
-										<FiNavigation className="text-gray-500" />
+										<FiNavigation className="text-gray-100" />
 									</a>
 								</div>
-								<div className="flex items-start gap-4 text-gray-500 mt-2 text-sm">
-									<div className="reply">
-										<p>18,257 replies</p>
-									</div>
-									<div className="dot">
-										<span>.</span>
-									</div>
-									<div className="likes">
-										<p>104,352 likes</p>
-									</div>
+								<div className="flex items-start gap-2 text-gray-500 mt-4 text-xs text-center">
+									<p>18,257 replies</p>
+									<span>.</span>
+									<p>104,352 likes</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div className="border border-gray-800"></div>
 				</div>
-			</header>
+			</div>
 		</main>
 	);
 }
