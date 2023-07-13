@@ -4,6 +4,9 @@ import Logo from '@/public/logo/logo.svg';
 import UnsplashLogo from '@/public/logo/unsplash-logo.jpg';
 import StomanAvatar from '@/public/avatars/stoman-avatar.jpg';
 import ZuckAvatar from '@/public/avatars/zuck-avatar.jpg';
+import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
+import SahilAvatar from '@/public/avatars/sahil-bloom-avatar.jpg';
+import Avatar1 from '@/public/avatars/avatar-1.jpeg';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import PineapplePhoto from '@/public/fruits/ananas.jpg';
 import StrawberryPhoto from '@/public/fruits/strawberry.jpg';
@@ -23,20 +26,35 @@ export default function Home() {
 	return (
 		<main className="mx-auto min-h-screen max-w-lg sm:max-w-4xl pt-5 pb-16">
 			<div className="flex flex-col items-center overflow-y-scroll">
-				<header className="flex justify-center pt-3 pb-3">
+				<header className="flex justify-center pt-3 pb-0">
 					<Image src={Logo} width={40} height={40} alt="Logo" />
 				</header>
 
 				<div>
 					{/* Single Dynamic Post */}
 					<Post
-						avatar={StomanAvatar}
+						avatar={ZuckAvatar}
 						username="zuck"
 						postContent="70 million sign ups on Threads as of this morning. Way beyond our expectations."
 						publishTime="10m"
 						totalReplies="18,257"
 						totalLikes="104,352"
 						isLiked={true}
+						isVerified={true}
+						mentions=""
+					/>
+
+					<div className="border border-gray-800"></div>
+
+					{/* Single Dynamic Post */}
+					<Post
+						avatar={SahilAvatar}
+						username="sahilbloom"
+						postContent="Don't chase the material things that you thing will make you happy. Chase the freedom that actually will."
+						publishTime="35m"
+						totalReplies="467"
+						totalLikes="4,352"
+						isLiked={false}
 						isVerified={true}
 						mentions=""
 					/>
@@ -70,13 +88,6 @@ export default function Home() {
 									alt="Logo"
 									className="rounded-full"
 								/>
-								<Image
-									src={ZuckAvatar}
-									width={8}
-									height={8}
-									alt="Logo"
-									className="rounded-full"
-								/>
 							</div>
 						</div>
 						<div className="flex flex-col w-full">
@@ -106,41 +117,41 @@ export default function Home() {
 									<p>
 										Best fruit shots of 2023. By @realstoman
 									</p>
-									<div className="mt-2 flex justify-start gap-4 overflow-x-scroll">
+									<div className="mt-2 flex justify-start gap-1.5 overflow-x-scroll">
 										<Image
 											src={PineapplePhoto}
 											alt="Author"
-											width={180}
+											width={150}
 											height={100}
-											className="portrait"
+											className="rounded-md"
 										/>
 										<Image
 											src={StrawberryPhoto}
 											alt="Author"
-											width={180}
+											width={150}
 											height={100}
-											className="portrait"
+											className="rounded-md"
 										/>
 										<Image
 											src={OrangePhoto}
 											alt="Author"
-											width={180}
+											width={150}
 											height={100}
-											className="portrait"
+											className="rounded-md"
 										/>
 										<Image
 											src={ApplePhoto}
 											alt="Author"
-											width={180}
+											width={150}
 											height={100}
-											className="portrait"
+											className="rounded-md"
 										/>
 										<Image
 											src={PilePhoto}
 											alt="Author"
-											width={180}
+											width={150}
 											height={100}
-											className="portrait"
+											className="rounded-md"
 										/>
 									</div>
 								</div>

@@ -143,9 +143,9 @@ const Post = ({
 							</button>
 						</div>
 						<div className="flex items-start gap-2 text-gray-500 mt-4 text-xs sm:text-[14px] text-center">
-							<p>{totalReplies} replies</p>
-							<span>.</span>
-							<p>{totalLikes} likes</p>
+							{totalReplies ? <p>{totalReplies} replies</p> : ''}
+							{totalReplies && totalLikes ? <span>.</span> : ''}
+							{totalLikes ? <p>{totalLikes} likes</p> : ''}
 						</div>
 					</div>
 				</div>
