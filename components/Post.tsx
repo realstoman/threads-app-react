@@ -7,6 +7,7 @@ import {
 	FiRepeat,
 } from 'react-icons/fi';
 import ZuckAvatar from '@/public/avatars/zuck-avatar.jpg';
+import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -43,52 +44,40 @@ const Post = ({
 	return (
 		<div className="px-4 my-4 w-full font-sans">
 			{isReposted ? (
-				<div className="">
-					<FiRepeat className="text-gray-100  -rotate-12 sm:text-xl" />
+				<div className="flex justify-start items-center gap-2 ml-4 text-xs mb-1 text-[#666]">
+					<FiRepeat className="-rotate-12 sm:text-xl" />
 					<span>{repostedBy} reposted</span>
 				</div>
 			) : (
 				''
 			)}
-			<div className="flex justify-start gap-3">
-				<div className="flex flex-col w-12 sm:w-14 min-h-full justify-between items-center shrink-0 p-0 m-0">
-					<div className="">
-						<Image
-							src={avatar}
-							width={40}
-							height={40}
-							alt="Logo"
-							className="rounded-full"
-						/>
-					</div>
-					<div className="w-full flex flex-col justify-center items-center">
-						<Image
-							src={ZuckAvatar}
-							width={16}
-							height={16}
-							alt="Logo"
-							className="rounded-full"
-						/>
-						<Image
-							src={ZuckAvatar}
-							width={12}
-							height={12}
-							alt="Logo"
-							className="rounded-full"
-						/>
-						<Image
-							src={ZuckAvatar}
-							width={8}
-							height={8}
-							alt="Logo"
-							className="rounded-full"
-						/>
+			<div className="flex justify-start gap-8">
+				<div className="relative border-l-2 border-[#444] ml-2">
+					<div className="flex -ml-7 flex-col w-14 h-full justify-between items-center shrink-0 absolute">
+						<div>
+							<Image
+								src={avatar}
+								width={40}
+								height={40}
+								alt="Logo"
+								className="rounded-full"
+							/>
+						</div>
+						<div className="flex flex-col justify-center items-center">
+							<Image
+								src={RonaldoAvatar}
+								width={14}
+								height={14}
+								alt="Logo"
+								className="rounded-full"
+							/>
+						</div>
 					</div>
 				</div>
 				<div className="flex flex-col w-full">
 					<div className="flex items-center justify-between">
 						<div className="flex items-center gap-2 w-full">
-							<p className="text-md sm:text-xl font-medium">
+							<p className="text-md sm:text-lg font-medium">
 								{username}
 							</p>
 							{isVerified ? (
@@ -114,8 +103,10 @@ const Post = ({
 					</div>
 
 					<div className="">
-						<div className="mt-1.5 sm:mt-2">
-							<p className="text-xs sm:text-sm">{postContent}</p>
+						<div className="mt-1">
+							<p className="text-xs sm:text-sm text-gray-200">
+								{postContent}
+							</p>
 							<Link href="/" className="text-blue-400">
 								{mentions}
 							</Link>
