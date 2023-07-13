@@ -7,33 +7,33 @@ const Navigation = () => {
 			<div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
 				<Link
 					href="/"
-					className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+					className="inline-flex flex-col items-center justify-center px-5 group"
 				>
-					<FiHome className="text-gray-100 text-2xl" />
+					<FiHome className="text-gray-700 hover:fill-white active:fill-white focus:fill-white text-2xl" />
 				</Link>
 				<Link
 					href="/search"
-					className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+					className="inline-flex flex-col items-center justify-center px-5 group"
 				>
-					<FiSearch className="text-gray-100 text-2xl" />
+					<FiSearch className="text-gray-700 hover:fill-white active:fill-white focus:fill-white text-2xl" />
 				</Link>
 				<Link
 					href="/"
-					className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+					className="inline-flex flex-col items-center justify-center px-5 group"
 				>
-					<FiEdit className="text-gray-100 text-2xl" />
+					<FiEdit className="text-gray-700 hover:fill-white active:fill-white focus:fill-white text-2xl" />
 				</Link>
 				<Link
 					href="/activity"
-					className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+					className="inline-flex flex-col items-center justify-center px-5 group"
 				>
-					<FiHeart className="text-gray-100 text-2xl" />
+					<FiHeart className="text-gray-700 hover:fill-white active:fill-white focus:fill-white text-2xl" />
 				</Link>
 				<Link
 					href="/profile"
-					className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+					className="inline-flex flex-col items-center justify-center px-5 group"
 				>
-					<FiUser className="text-gray-100 text-2xl" />
+					<FiUser className="text-gray-700 hover:fill-white active:fill-white focus:fill-white text-2xl" />
 				</Link>
 			</div>
 		</div>

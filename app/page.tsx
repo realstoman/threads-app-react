@@ -1,17 +1,12 @@
 'use client';
 import Image from 'next/image';
-import Logo from '@/public/logo/logo.svg';
+import Logo from '../public/logo/logo.svg';
 
 export default function Home() {
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-between p-10">
 			<header className="">
-				<Image
-					src="../public/logo/logo.svg"
-					width={100}
-					height={100}
-					alt="Logo"
-				/>
+				<Image src={Logo} width={100} height={100} alt="Logo" />
 
 				<div className="main-content">
 					{/* Single Post */}
