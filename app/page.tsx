@@ -1,9 +1,15 @@
 'use client';
 import Image from 'next/image';
 import Logo from '@/public/logo/logo.svg';
+import UnsplashLogo from '@/public/logo/unsplash-logo.jpg';
 import StomanAvatar from '@/public/avatars/stoman-avatar.jpg';
 import ZuckAvatar from '@/public/avatars/zuck-avatar.jpg';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
+import PineapplePhoto from '@/public/fruits/ananas.jpg';
+import StrawberryPhoto from '@/public/fruits/strawberry.jpg';
+import OrangePhoto from '@/public/fruits/orange.jpg';
+import ApplePhoto from '@/public/fruits/apple.jpg';
+import PilePhoto from '@/public/fruits/pile.jpg';
 import {
 	FiHeart,
 	FiMessageCircle,
@@ -15,7 +21,7 @@ import Post from '@/components/Post';
 
 export default function Home() {
 	return (
-		<main className="mx-auto min-h-screen max-w-lg sm:max-w-4xl pt-5 pb-16 bg-slate-900">
+		<main className="mx-auto min-h-screen max-w-lg sm:max-w-4xl pt-5 pb-16">
 			<div className="flex flex-col items-center overflow-y-scroll">
 				<header className="flex justify-center pt-3 pb-3">
 					<Image src={Logo} width={40} height={40} alt="Logo" />
@@ -42,9 +48,9 @@ export default function Home() {
 						<div className="flex flex-col w-12 sm:w-14 min-h-full justify-between items-center shrink-0 p-0 m-0">
 							<div className="">
 								<Image
-									src={ZuckAvatar}
-									width={45}
-									height={45}
+									src={UnsplashLogo}
+									width={40}
+									height={40}
 									alt="Logo"
 									className="rounded-full"
 								/>
@@ -76,7 +82,7 @@ export default function Home() {
 						<div className="flex flex-col w-full">
 							<div className="flex items-center justify-between">
 								<div className="flex items-center gap-2 w-full">
-									<p className="text-lg">zuck</p>
+									<p className="text-lg">unsplash</p>
 									<Image
 										src={BlueCheckmark}
 										width={14}
@@ -87,7 +93,7 @@ export default function Home() {
 								</div>
 								<div className="flex items-center gap-3">
 									<span className="text-xs text-gray-500">
-										10m
+										2h
 									</span>
 									<a href="#">
 										<FiMoreHorizontal className="text-gray-100" />
@@ -96,9 +102,47 @@ export default function Home() {
 							</div>
 
 							<div className="">
-								<div className="text-xs mt-2 ">
-									70 million sign ups on Threads as of this
-									morning. Way beyond our expectations.
+								<div className="text-xs mt-2">
+									<p>
+										Best fruit shots of 2023. By @realstoman
+									</p>
+									<div className="mt-2 flex justify-start gap-4 overflow-x-scroll">
+										<Image
+											src={PineapplePhoto}
+											alt="Author"
+											width={180}
+											height={100}
+											className="portrait"
+										/>
+										<Image
+											src={StrawberryPhoto}
+											alt="Author"
+											width={180}
+											height={100}
+											className="portrait"
+										/>
+										<Image
+											src={OrangePhoto}
+											alt="Author"
+											width={180}
+											height={100}
+											className="portrait"
+										/>
+										<Image
+											src={ApplePhoto}
+											alt="Author"
+											width={180}
+											height={100}
+											className="portrait"
+										/>
+										<Image
+											src={PilePhoto}
+											alt="Author"
+											width={180}
+											height={100}
+											className="portrait"
+										/>
+									</div>
 								</div>
 
 								<div className="flex gap-4 mt-3">

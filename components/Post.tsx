@@ -42,8 +42,8 @@ const Post = ({
 				<div className="">
 					<Image
 						src={avatar}
-						width={45}
-						height={45}
+						width={40}
+						height={40}
 						alt="Logo"
 						className="rounded-full"
 					/>
