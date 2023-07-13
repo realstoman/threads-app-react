@@ -11,6 +11,7 @@ import {
 	FiNavigation,
 	FiRepeat,
 } from 'react-icons/fi';
+import Post from '@/components/Post';
 
 export default function Home() {
 	return (
@@ -21,6 +22,22 @@ export default function Home() {
 				</header>
 
 				<div>
+					{/* Single Dynamic Post */}
+					<Post
+						avatar={ZuckAvatar}
+						username="zuck"
+						postContent="70 million sign ups on Threads as of this
+									morning. Way beyond our expectations."
+						publishTime="10m"
+						replies="18,257"
+						likes="104,352"
+						isLiked={true}
+						isVerified={true}
+						mentions=""
+					/>
+
+					<div className="border border-gray-800"></div>
+
 					{/* Single Post */}
 					<div className="flex px-4 gap-3 my-4">
 						<div className="flex flex-col w-12 sm:w-14 min-h-full justify-between items-center shrink-0 p-0 m-0">
