@@ -34,16 +34,16 @@ const UserActivity = ({
 					/>
 					<div className="">
 						{activityType === 'like' ? (
-							<div className="bg-red-500 p-0.5 rounded-full -ml-2.5 mt-3 border-2 border-[#222]">
-								<FiHeart className=" fill-white text-xs" />
+							<div className="bg-red-500 p-[3px] rounded-full -ml-3 mt-3.5 border-2 border-[#222]">
+								<FiHeart className=" fill-white text-[9px]" />
 							</div>
 						) : activityType === 'reply' ? (
-							<div className="bg-blue-400 p-0.5 rounded-full -ml-2.5 mt-3 border-2 border-[#222]">
-								<FiMessageCircle className=" fill-white text-xs" />
+							<div className="bg-blue-400 p-[3px] rounded-full -ml-3 mt-3.5 border-2 border-[#222]">
+								<FiMessageCircle className=" fill-white text-[9px]" />
 							</div>
 						) : (
-							<div className="bg-purple-600 p-0.5 rounded-full -ml-2.5 mt-3 border-2 border-[#222]">
-								<FiUser className=" fill-white text-xs" />
+							<div className="bg-purple-600 p-[3px] rounded-full -ml-3 mt-3.5 border-2 border-[#222]">
+								<FiUser className=" fill-white text-[9px]" />
 							</div>
 						)}
 					</div>
