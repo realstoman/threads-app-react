@@ -26,8 +26,8 @@ export default function Home() {
 	return (
 		<main className="mx-auto min-h-screen max-w-lg sm:max-w-4xl pt-5 pb-16">
 			<div className="flex flex-col items-center overflow-y-scroll">
-				<header className="flex justify-center pt-3 pb-0">
-					<Image src={Logo} width={40} height={40} alt="Logo" />
+				<header className="flex justify-center pt-0 pb-0">
+					<Image src={Logo} width={35} height={35} alt="Logo" />
 				</header>
 
 				<div>
