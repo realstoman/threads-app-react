@@ -5,7 +5,7 @@ interface AccountType {
 	avatar: any;
 	username: string;
 	fullName: string;
-	isVerified: boolean;
+	isVerified?: boolean;
 	followedBy?: any;
 	followedByAnother?: any;
 	followersCount: string;
