@@ -45,7 +45,7 @@ export default function Home() {
 						mentions=""
 					/>
 
-					<div className="border border-gray-800"></div>
+					<div className="border border-[#222]"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -62,7 +62,7 @@ export default function Home() {
 						repostedBy="maiwandstoman"
 					/>
 
-					<div className="border border-gray-800"></div>
+					<div className="border border-[#222]"></div>
 
 					{/* Single Post */}
 					<div className="flex px-4 gap-8 my-4">
@@ -187,7 +187,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="border border-gray-800"></div>
+					<div className="border border-[#222]"></div>
 				</div>
 			</div>
 		</PageWrapper>
