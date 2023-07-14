@@ -99,6 +99,63 @@ const profile = () => {
 						</button>
 					</div>
 				</header>
+				<div className="text-xs w-full text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 mt-3">
+					<ul className="flex justify-between items-center">
+						<li className="w-1/2 border-b border-gray-300">
+							<a
+								href="#"
+								className="inline-block p-2 rounded-t-lg text-gray-200"
+							>
+								Threads
+							</a>
+						</li>
+						<li className="w-1/2">
+							<a
+								href="#"
+								className="inline-block p-2 text-[#777] rounded-t-lg"
+								aria-current="page"
+							>
+								Replies
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="myTabContent">
+					<div
+						className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+						id="profile"
+						role="tabpanel"
+						aria-labelledby="profile-tab"
+					>
+						<p className="text-sm text-gray-500 dark:text-gray-400">
+							This is some placeholder content the{' '}
+							<strong className="font-medium text-gray-800 dark:text-white">
+								Profile tabs associated content
+							</strong>
+							. Clicking another tab will toggle the visibility of
+							this one for the next. The tab JavaScript swaps
+							classes to control the content visibility and
+							styling.
+						</p>
+					</div>
+					<div
+						className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+						id="dashboard"
+						role="tabpanel"
+						aria-labelledby="dashboard-tab"
+					>
+						<p className="text-sm text-gray-500 dark:text-gray-400">
+							This is some placeholder content the{' '}
+							<strong className="font-medium text-gray-800 dark:text-white">
+								Dashboard tabs associated content
+							</strong>
+							. Clicking another tab will toggle the visibility of
+							this one for the next. The tab JavaScript swaps
+							classes to control the content visibility and
+							styling.
+						</p>
+					</div>
+				</div>
 			</div>
 		</PageWrapper>
 	);
