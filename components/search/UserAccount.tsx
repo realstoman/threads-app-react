@@ -83,7 +83,7 @@ const UserAccount = ({
 					</div>
 				</div>
 				<div className="text-gray-300 flex justify-end text-xs">
-					<button className="border border-[#333] px-6 py-1 rounded-lg">
+					<button className="border border-[#333] px-6 py-1.5 rounded-lg">
 						Follow
 					</button>
 				</div>
