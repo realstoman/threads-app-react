@@ -1,6 +1,9 @@
 'use client';
 
 import PageWrapper from '@/components/PageWrapper';
+import UserActivity from '@/components/activity/UserActivity';
+
+import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 
 const activity = () => {
 	return (
@@ -11,6 +14,16 @@ const activity = () => {
 					<h1 className="text-4xl font-semibold mb-2">Activity</h1>
 					<div></div>
 				</header>
+
+				{/* Dynamic User Activity */}
+				<UserActivity
+					avatar={RonaldoAvatar}
+					activityType="like"
+					username="cristiano"
+					isVerified={true}
+					activityTime="13m"
+					activityContent="When you're the only developer in a..."
+				/>
 			</div>
 		</PageWrapper>
 	);

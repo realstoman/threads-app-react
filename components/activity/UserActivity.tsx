@@ -21,7 +21,7 @@ const UserActivity = ({
 }: ActivityType) => {
 	return (
 		<div className="px-4 w-full my-4 clear-both">
-			<h1></h1>
+			<h1>{username}</h1>
 		</div>
 	);
 };
