@@ -21,13 +21,14 @@ import {
 	FiRepeat,
 } from 'react-icons/fi';
 import Post from '@/components/Post';
+import PageWrapper from '@/components/PageWrapper';
 
 export default function Home() {
 	return (
-		<main className="mx-auto min-h-screen max-w-lg sm:max-w-4xl pt-5 pb-16">
-			<div className="flex flex-col items-center overflow-y-scroll">
-				<header className="flex justify-center pt-3 pb-0">
-					<Image src={Logo} width={40} height={40} alt="Logo" />
+		<PageWrapper>
+			<div className="pt-5 pb-16 flex flex-col items-center overflow-y-scroll">
+				<header className="flex justify-center pt-0 pb-0">
+					<Image src={Logo} width={35} height={35} alt="Logo" />
 				</header>
 
 				<div>
@@ -44,7 +45,7 @@ export default function Home() {
 						mentions=""
 					/>
 
-					<div className="border border-gray-800"></div>
+					<div className="border border-[#222]"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -61,9 +62,9 @@ export default function Home() {
 						repostedBy="maiwandstoman"
 					/>
 
-					<div className="border border-gray-800"></div>
+					<div className="border border-[#222]"></div>
 
-					{/* Single Post */}
+					{/* Single Carousel Post */}
 					<div className="flex px-4 gap-8 my-4">
 						<div className="relative border-l-2 border-[#444] ml-2">
 							<div className="flex -ml-7 flex-col w-14 h-full justify-between items-center shrink-0 absolute">
@@ -116,7 +117,7 @@ export default function Home() {
 								</div>
 							</div>
 
-							<div className="">
+							<div>
 								<div className="text-xs mt-1">
 									<p className="text-gray-200">
 										Best fruit shots of 2023.{' '}
@@ -186,9 +187,9 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="border border-gray-800"></div>
+					<div className="border border-[#222]"></div>
 				</div>
 			</div>
-		</main>
+		</PageWrapper>
 	);
 }

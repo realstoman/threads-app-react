@@ -59,7 +59,7 @@ const Post = ({
 								src={avatar}
 								width={40}
 								height={40}
-								alt="Logo"
+								alt="Account Avatar"
 								className="rounded-full"
 							/>
 						</div>
@@ -68,7 +68,7 @@ const Post = ({
 								src={RonaldoAvatar}
 								width={14}
 								height={14}
-								alt="Logo"
+								alt="Account Avatar"
 								className="rounded-full"
 							/>
 						</div>
