@@ -64,7 +64,7 @@ export default function Home() {
 
 					<div className="border border-[#222]"></div>
 
-					{/* Single Post */}
+					{/* Single Carousel Post */}
 					<div className="flex px-4 gap-8 my-4">
 						<div className="relative border-l-2 border-[#444] ml-2">
 							<div className="flex -ml-7 flex-col w-14 h-full justify-between items-center shrink-0 absolute">
