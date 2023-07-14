@@ -117,7 +117,7 @@ export default function Home() {
 								</div>
 							</div>
 
-							<div className="">
+							<div>
 								<div className="text-xs mt-1">
 									<p className="text-gray-200">
 										Best fruit shots of 2023.{' '}

@@ -14,9 +14,22 @@ const activity = () => {
 		<PageWrapper>
 			<div className="pt-5 pb-16 flex flex-col items-center overflow-y-scroll">
 				{/* Header section */}
-				<header className="w-full px-4">
+				<header className="mb-3 px-4 w-full">
 					<h1 className="text-4xl font-semibold mb-2">Activity</h1>
-					<div></div>
+					<div className="flex justify-start gap-2 overflow-x-scroll">
+						<button className="border border-white bg-white text-black text-xs px-8 py-1.5 rounded-lg">
+							All
+						</button>
+						<button className="border border-[#333] bg-transparent text-gray-200 text-xs px-8 py-1.5 rounded-lg">
+							Replies
+						</button>
+						<button className="border border-[#333] bg-transparent text-gray-200 text-xs px-8 py-1.5 rounded-lg">
+							Metions
+						</button>
+						<button className="border border-[#333] bg-transparent text-gray-200 text-xs px-8 py-1.5 rounded-lg">
+							Verified
+						</button>
+					</div>
 				</header>
 
 				{/* Dynamic User Activity */}
@@ -26,7 +39,7 @@ const activity = () => {
 					username="cristiano"
 					isVerified={true}
 					activityTime="13m"
-					activityContent="When you're the only developer in a..."
+					activityContent="When you're the only developer in a busi..."
 				/>
 
 				<div className="border border-[#222] w-full"></div>
@@ -37,7 +50,7 @@ const activity = () => {
 					username="zuck"
 					isVerified={true}
 					activityTime="2h"
-					activityContent="Threads is the exact copy of Twitter ..."
+					activityContent="Threads is the exact copy past of Twitter ..."
 					userReply="Exactly, if you look closely, even we didn't added the edit functionality like the Twitter app LOL"
 				/>
 
