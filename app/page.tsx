@@ -21,11 +21,12 @@ import {
 	FiRepeat,
 } from 'react-icons/fi';
 import Post from '@/components/Post';
+import PageWrapper from '@/components/PageWrapper';
 
 export default function Home() {
 	return (
-		<main className="mx-auto min-h-screen max-w-lg sm:max-w-4xl pt-5 pb-16">
-			<div className="flex flex-col items-center overflow-y-scroll">
+		<PageWrapper>
+			<div className="pt-5 pb-16 flex flex-col items-center overflow-y-scroll">
 				<header className="flex justify-center pt-0 pb-0">
 					<Image src={Logo} width={35} height={35} alt="Logo" />
 				</header>
@@ -189,6 +190,6 @@ export default function Home() {
 					<div className="border border-gray-800"></div>
 				</div>
 			</div>
-		</main>
+		</PageWrapper>
 	);
 }
