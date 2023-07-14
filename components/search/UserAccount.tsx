@@ -21,7 +21,7 @@ const UserAccount = ({
 	followersCount,
 }: AccountType) => {
 	return (
-		<div className="px-4 w-full my-4">
+		<div className="px-4 w-full my-4 clear-both">
 			<div className="flex justify-start items-start gap-4">
 				<div className="">
 					<Image

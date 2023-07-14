@@ -6,9 +6,17 @@ import UserAccount from '@/components/search/UserAccount';
 import YusufAvatar from '@/public/avatars/hamza-yusuf-avatar.png';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import RashidAvatar from '@/public/avatars/rashid-khan-avatar.jpg';
-import SalahAvatar from '@/public/avatars/salah-avatar.jpg';
-import ZuckAvatar from '@/public/avatars/zuck-avatar.jpg';
-import GeekAvatar from '@/public/avatars/avatar-1.jpeg';
+// import SalahAvatar from '@/public/avatars/salah-avatar.jpg';
+// import ZuckAvatar from './public/avatars/zuck-avatar.jpg';
+// import GeekAvatar from './public/avatars/avatar-1.jpeg';
+
+// Logos
+import AppleLogo from '@/public/logo/apple-logo.png';
+// import AlokozayLogo from './public/logo/alokozay-logo.jpg';
+// import SmashingMagLogo from './public/logo/smashing-magazine-logo.jpg';
+// import NikeLogo from './public/logo/nike-logo.jpg';
+// import GoogleLogo from './public/logo/google-logo.jpg';
+// import RealMadridLogo from './public/logo/real-madrid-logo.jpg';
 
 const search = () => {
 	return (
@@ -40,6 +48,18 @@ const search = () => {
 					followedBy={RonaldoAvatar}
 					followedByAnother={RashidAvatar}
 					followersCount="2m"
+				/>
+
+				<div className="border border-[#222] w-full"></div>
+
+				{/* Dynamic Search Account */}
+				<UserAccount
+					avatar={RonaldoAvatar}
+					username="apple"
+					fullName="Apple Inc"
+					isVerified={true}
+					followedBy={RashidAvatar}
+					followersCount="780k"
 				/>
 
 				<div className="border border-[#222] w-full"></div>
