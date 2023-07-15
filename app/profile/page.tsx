@@ -36,16 +36,19 @@ const profile = () => {
 				</header>
 
 				{/* Profile Tabs */}
-				<div className="text-xs w-full text-center mb-4 border-b border-gray-700 mt-3">
+				<div className="w-full text-center mb-4 mt-3">
 					<ul
-						className="flex flex-wrap -mb-px text-xs font-medium text-center"
+						className="flex flex-wrap -mb-px text-sm font-medium text-center"
 						id="tab"
 						data-tabs-toggle="#tabContent"
 						role="tablist"
 					>
-						<li className="w-1/2 border-b" role="presentation">
+						<li
+							className="w-1/2 border-b border-gray-200"
+							role="presentation"
+						>
 							<button
-								className="inline-block p-2 rounded-t-lg"
+								className="inline-block p-2 rounded-t-lg text-gray-100"
 								id="threads-tab"
 								data-tabs-target="#threads"
 								type="button"
@@ -56,7 +59,10 @@ const profile = () => {
 								Threads
 							</button>
 						</li>
-						<li className="w-1/2 border-b" role="presentation">
+						<li
+							className="w-1/2 border-b border-gray-700"
+							role="presentation"
+						>
 							<button
 								className="inline-block p-2 border-transparent rounded-t-lg"
 								id="replies-tab"
@@ -81,7 +87,7 @@ const profile = () => {
 						<Post
 							avatar={StomanProfile}
 							username="realstoman"
-							postContent="Can not say no to programming, design, coffee and some football."
+							postContent="Can't say no to programming, design, coffee and some football."
 							publishTime="45m"
 							totalReplies="467"
 							totalLikes="4,352"
