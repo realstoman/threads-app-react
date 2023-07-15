@@ -48,7 +48,7 @@ const Reply = ({
 	totalReplyLikes,
 }: ReplyType) => {
 	return (
-		<div className="px-4 my-4 w-full font-sans">
+		<div className="px-4 my-4 font-sans">
 			<div className="flex justify-start gap-8">
 				<div className="relative border-l-2 border-[#444] ml-2">
 					<div className="flex -ml-7 flex-col w-14 h-full justify-between items-center shrink-0 absolute">
@@ -61,7 +61,7 @@ const Reply = ({
 								className="rounded-full"
 							/>
 						</div>
-						<div className="flex flex-col justify-center items-center">
+						{/* <div className="flex flex-col justify-center items-center">
 							<Image
 								src={StomanAvatar}
 								width={32}
@@ -69,7 +69,7 @@ const Reply = ({
 								alt="Account Avatar"
 								className="rounded-full"
 							/>
-						</div>
+						</div> */}
 					</div>
 				</div>
 				<div className="flex flex-col w-full">
@@ -157,56 +157,67 @@ const Reply = ({
 								''
 							)}
 						</div>
-						<div className="mt-2">
-							<div className="flex items-center gap-2 w-full">
-								<p className="text-md sm:text-lg">realstoman</p>
-								{isAuthorVerified ? (
-									<Image
-										src={BlueCheckmark}
-										width={14}
-										height={14}
-										alt="Blue Checkmark"
-										className="rounded-full w-4 sm:w-5"
-									/>
-								) : (
-									''
-								)}
-							</div>
-							<span className="text-xs text-gray-200">
-								{replyContent}
-							</span>
-							<div className="flex gap-4 mt-3 sm:mt-4">
-								<button type="button">
-									<FiHeart className="fill-none text-gray-100 sm:text-xl" />
-								</button>
-								<button type="button">
-									<FiMessageCircle className="text-gray-100 -rotate-90 sm:text-xl" />
-								</button>
-								<button type="button">
-									<FiRepeat className="text-gray-100  -rotate-12 sm:text-xl" />
-								</button>
-								<button type="button">
-									<FiNavigation className="text-gray-100 sm:text-xl" />
-								</button>
-							</div>
-							<div className="flex items-start gap-2 text-gray-500 mt-2 text-xs sm:text-[14px] text-center">
-								{totalReplyReplies ? (
-									<p>{totalReplyReplies} replies</p>
-								) : (
-									''
-								)}
-								{totalReplyReplies && totalReplyLikes ? (
-									<span>.</span>
-								) : (
-									''
-								)}
-								{totalReplyLikes ? (
-									<p>{totalReplyLikes} likes</p>
-								) : (
-									''
-								)}
-							</div>
+					</div>
+				</div>
+			</div>
+			<div className="flex justify-start gap-8">
+				<div className="ml-2">
+					<div className="flex -ml-6 flex-col w-14 justify-between items-center shrink-0 absolute">
+						<div className="flex flex-col justify-center items-center">
+							<Image
+								src={StomanAvatar}
+								width={32}
+								height={32}
+								alt="Account Avatar"
+								className="rounded-full"
+							/>
 						</div>
+					</div>
+				</div>
+				<div className="mt-2">
+					<div className="flex items-center gap-2 w-full">
+						<p className="text-md sm:text-lg">realstoman</p>
+						{isAuthorVerified ? (
+							<Image
+								src={BlueCheckmark}
+								width={14}
+								height={14}
+								alt="Blue Checkmark"
+								className="rounded-full w-4 sm:w-5"
+							/>
+						) : (
+							''
+						)}
+					</div>
+					<span className="text-xs text-gray-200">
+						{replyContent}
+					</span>
+					<div className="flex gap-4 mt-3 sm:mt-4">
+						<button type="button">
+							<FiHeart className="fill-none text-gray-100 sm:text-xl" />
+						</button>
+						<button type="button">
+							<FiMessageCircle className="text-gray-100 -rotate-90 sm:text-xl" />
+						</button>
+						<button type="button">
+							<FiRepeat className="text-gray-100  -rotate-12 sm:text-xl" />
+						</button>
+						<button type="button">
+							<FiNavigation className="text-gray-100 sm:text-xl" />
+						</button>
+					</div>
+					<div className="flex items-start gap-2 text-gray-500 mt-2 text-xs sm:text-[14px] text-center">
+						{totalReplyReplies ? (
+							<p>{totalReplyReplies} replies</p>
+						) : (
+							''
+						)}
+						{totalReplyReplies && totalReplyLikes ? (
+							<span>.</span>
+						) : (
+							''
+						)}
+						{totalReplyLikes ? <p>{totalReplyLikes} likes</p> : ''}
 					</div>
 				</div>
 			</div>
