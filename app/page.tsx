@@ -2,11 +2,9 @@
 import Image from 'next/image';
 import Logo from '@/public/logo/logo.svg';
 import UnsplashLogo from '@/public/logo/unsplash-logo.jpg';
-import StomanAvatar from '@/public/avatars/stoman-avatar.jpg';
 import ZuckAvatar from '@/public/avatars/zuck-avatar.jpg';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import SahilAvatar from '@/public/avatars/sahil-bloom-avatar.jpg';
-import Avatar1 from '@/public/avatars/avatar-1.jpeg';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import PineapplePhoto from '@/public/fruits/ananas.jpg';
 import StrawberryPhoto from '@/public/fruits/strawberry.jpg';
@@ -19,9 +17,19 @@ import {
 	FiMoreHorizontal,
 	FiNavigation,
 	FiRepeat,
+	FiX,
 } from 'react-icons/fi';
 import Post from '@/components/Post';
 import PageWrapper from '@/components/PageWrapper';
+import YusufAvatar from '@/public/avatars/hamza-yusuf-avatar.png';
+import MoalemAvatar from '@/public/avatars/moalem-avatar.jpg';
+import AppleLogo from '@/public/logo/apple-logo.jpg';
+import SuggestedAccount from '@/components/SuggestedAccount';
+import SmashingMagLogo from '@/public/logo/smashing-magazine-logo.jpg';
+import AlokozayLogo from '@/public/logo/alokozay-logo.jpg';
+import RealMadridLogo from '@/public/logo/real-madrid-logo.jpg';
+import GoogleLogo from '@/public/logo/google-logo.jpg';
+import NikeLogo from '@/public/logo/nike-logo.jpg';
 
 export default function Home() {
 	return (
@@ -31,7 +39,7 @@ export default function Home() {
 					<Image src={Logo} width={35} height={35} alt="Logo" />
 				</header>
 
-				<div>
+				<div className="w-full">
 					{/* Single Dynamic Post */}
 					<Post
 						avatar={ZuckAvatar}
@@ -40,9 +48,8 @@ export default function Home() {
 						publishTime="10m"
 						totalReplies="18,257"
 						totalLikes="104,352"
-						isLiked={true}
+						isLiked={false}
 						isVerified={true}
-						mentions=""
 					/>
 
 					<div className="border border-[#222]"></div>
@@ -53,11 +60,9 @@ export default function Home() {
 						username="sahilbloom"
 						postContent="Don't chase the material things that you thing will make you happy. Chase the freedom that actually will."
 						publishTime="35m"
-						totalReplies="467"
 						totalLikes="4,352"
-						isLiked={false}
+						isLiked={true}
 						isVerified={true}
-						mentions=""
 						isReposted={true}
 						repostedBy="maiwandstoman"
 					/>
@@ -167,7 +172,7 @@ export default function Home() {
 
 								<div className="flex gap-4 mt-3">
 									<a href="#">
-										<FiHeart className="fill-red-600 text-red-600" />
+										<FiHeart className="text-gray-100" />
 									</a>
 									<a href="#">
 										<FiMessageCircle className="text-gray-100 -rotate-90" />
@@ -187,6 +192,109 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+
+					<div className="border border-[#222]"></div>
+
+					{/* Single Dynamic Post */}
+					<Post
+						avatar={RonaldoAvatar}
+						username="cristiano"
+						postContent="Family should be the most important people in your life. They are the only people with you in the good and moments and in the bad moments."
+						publishTime="5h"
+						totalReplies="13,786"
+						totalLikes="65,980"
+						isLiked={true}
+						isVerified={true}
+						isReposted={true}
+						repostedBy="rashidkhan"
+					/>
+
+					<div className="border border-[#222]"></div>
+
+					{/* Recommendations */}
+					<div className="px-4 my-2 w-full">
+						<h2 className="text-sm text-gray-200">
+							Suggested for you
+						</h2>
+						<div className="flex justify-start gap-1 overflow-x-scroll mt-2">
+							<SuggestedAccount
+								avatar={AppleLogo}
+								username="apple"
+								fullName="Apple Inc"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={AlokozayLogo}
+								username="alokozay"
+								fullName="Alokozay Group"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={NikeLogo}
+								username="nike"
+								fullName="Nike"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={SmashingMagLogo}
+								username="smashingmag"
+								fullName="Smashing Maga..."
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={RealMadridLogo}
+								username="realmadrid"
+								fullName="Real Madrid"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={GoogleLogo}
+								username="google"
+								fullName="Google Inc"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={UnsplashLogo}
+								username="unsplash"
+								fullName="Unsplash Stock"
+								isVerified={true}
+							/>
+						</div>
+					</div>
+
+					<div className="border border-[#222]"></div>
+
+					{/* Single Dynamic Post */}
+					<Post
+						avatar={MoalemAvatar}
+						username="moalem_design"
+						postContent="Is ChatGPT here to help us or rather make us more lazy?"
+						publishTime="18h"
+						totalLikes="892"
+						isLiked={true}
+						isVerified={false}
+					/>
+
+					<div className="border border-[#222]"></div>
+
+					{/* Single Dynamic Post */}
+					<Post
+						avatar={YusufAvatar}
+						username="hamzayusuf"
+						postContent="The heart also needs to breathe, and the breath of heart is none other than the remembrance of God."
+						publishTime="1d"
+						totalReplies="650"
+						totalLikes="2743"
+						isLiked={false}
+						isVerified={true}
+					/>
+
 					<div className="border border-[#222]"></div>
 				</div>
 			</div>

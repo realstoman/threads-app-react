@@ -83,7 +83,7 @@ const ProfileBio = () => {
 			</div>
 
 			{/* Buttons */}
-			<div className="text-gray-300 flex justify-center text-xs gap-2 mt-3">
+			<div className="text-gray-300 flex justify-center sm:justify-start text-xs gap-2 mt-3">
 				<button className="border border-[#333] px-12 py-1.5 rounded-lg">
 					Edit profile
 				</button>
