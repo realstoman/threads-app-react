@@ -25,6 +25,8 @@ import ProjectImage1 from '@/public/projects/project-1.jpg';
 import ProjectImage2 from '@/public/projects/project-2.jpg';
 import ProjectImage3 from '@/public/projects/project-3.jpg';
 import ProjectImage4 from '@/public/projects/project-4.jpg';
+import Reply from '@/components/profile/Reply';
+import MoalemAvatar from '@/public/avatars/moalem-avatar.jpg';
 
 const profile = () => {
 	return (
@@ -223,16 +225,40 @@ const profile = () => {
 						role="tabpanel"
 						aria-labelledby="replies-tab"
 					>
-						<p className="text-sm text-gray-500 dark:text-gray-400">
-							This is some placeholder content the{' '}
-							<strong className="font-medium text-gray-800 dark:text-white">
-								Dashboard tabs associated content
-							</strong>
-							. Clicking another tab will toggle the visibility of
-							this one for the next. The tab JavaScript swaps
-							classes to control the content visibility and
-							styling.
-						</p>
+						<Reply
+							avatar={MoalemAvatar}
+							username="moalem_design"
+							postContent="People will spend 8 hours a day on their phone, never work out and spend no time building something meaningful and then wonder why they feel like shit."
+							publishTime="20m"
+							replyContent="I'm agree on this with you jack"
+							totalPostReplies="50"
+							totalPostLikes="270"
+							isVerified={false}
+							isAuthorVerified={false}
+							isRepliedTo={false}
+							totalReplyLikes="5"
+							totalReplyReplies="12"
+							isLiked={true}
+						/>
+
+						<div className="border border-[#222]"></div>
+
+						<Reply
+							avatar={JackAvatar}
+							username="jackdorsey"
+							postContent="People will spend 8 hours a day on their phone, never work out and spend no time building something meaningful and then wonder why they feel like shit."
+							publishTime="3h"
+							replyContent="ChatGPT is a handy AI technology and I’m also using it when I need it. It’s great for suggestions and recommendations, but it shouldn’t be used for the things that you can do them yourself. Never be dependent on any of these technologies. I suggest to use ChatGPT only when you have to."
+							totalPostReplies="160"
+							totalPostLikes="6,048"
+							isVerified={true}
+							isAuthorVerified={false}
+							isRepliedTo={false}
+							totalReplyLikes="68"
+							totalReplyReplies="72"
+						/>
+
+						<div className="border border-[#222]"></div>
 					</div>
 				</div>
 			</div>
