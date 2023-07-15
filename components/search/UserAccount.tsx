@@ -68,7 +68,7 @@ const UserAccount = ({
 									className="rounded-full -ml-1.5 border border-[#222]"
 								/>
 							</div>
-						) : (
+						) : followedBy ? (
 							<Image
 								src={followedBy}
 								width={16}
@@ -76,6 +76,8 @@ const UserAccount = ({
 								alt="Account Avatar"
 								className="rounded-full"
 							/>
+						) : (
+							''
 						)}
 						<span className="text-xs text-gray-200 leading-none">
 							{followersCount} followers
