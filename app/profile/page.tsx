@@ -3,14 +3,11 @@
 import PageWrapper from '@/components/PageWrapper';
 import Image from 'next/image';
 import {
-	FiGlobe,
 	FiHeart,
-	FiInstagram,
 	FiMessageCircle,
 	FiMoreHorizontal,
 	FiNavigation,
 	FiRepeat,
-	FiSettings,
 } from 'react-icons/fi';
 import StomanProfile from '@/public/avatars/stoman-avatar.jpg';
 import Avatar1 from '@/public/avatars/avatar-1.jpeg';
@@ -20,7 +17,6 @@ import JackAvatar from '@/public/avatars/jack-dorsey-avatar.jpg';
 import 'flowbite';
 import ProfileBio from '../../components/profile/ProfileBio';
 import Post from '@/components/Post';
-import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import ProjectImage1 from '@/public/projects/project-1.jpg';
 import ProjectImage2 from '@/public/projects/project-2.jpg';
 import ProjectImage3 from '@/public/projects/project-3.jpg';
@@ -34,7 +30,7 @@ const profile = () => {
 		<PageWrapper>
 			<div className="pt-5 pb-16 flex flex-col items-center overflow-y-scroll">
 				{/* Profile Bio */}
-				<header className="px-4">
+				<header className="px-4 w-full">
 					<ProfileBio />
 				</header>
 

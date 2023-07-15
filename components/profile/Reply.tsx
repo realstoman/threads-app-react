@@ -206,7 +206,7 @@ const Reply = ({
 							<FiNavigation className="text-gray-100 sm:text-xl" />
 						</button>
 					</div>
-					<div className="flex items-start gap-2 text-gray-500 mt-2 text-xs sm:text-[14px] text-center">
+					<div className="flex items-start gap-2 text-gray-500 mt-3 text-xs sm:text-[14px] text-center">
 						{totalReplyReplies ? (
 							<p>{totalReplyReplies} replies</p>
 						) : (
