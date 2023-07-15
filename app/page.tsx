@@ -19,11 +19,13 @@ import {
 	FiMoreHorizontal,
 	FiNavigation,
 	FiRepeat,
+	FiX,
 } from 'react-icons/fi';
 import Post from '@/components/Post';
 import PageWrapper from '@/components/PageWrapper';
 import YusufAvatar from '@/public/avatars/hamza-yusuf-avatar.png';
 import MoalemAvatar from '@/public/avatars/moalem-avatar.jpg';
+import AppleLogo from '@/public/logo/apple-logo.jpg';
 
 export default function Home() {
 	return (
@@ -207,6 +209,44 @@ export default function Home() {
 					<div className="border border-[#222]"></div>
 
 					{/* Recommendations */}
+					<div className="px-4 my-2">
+						<h2 className="text-sm text-gray-200">
+							Suggested for you
+						</h2>
+						<div className="flex mt-2">
+							<div className="card flex flex-col items-center justify-center border border-[#222] rounded-xl px-4 pt-1 pb-2">
+								<FiX className="w-4 font-bold self-end text-[#777]" />
+								<Image
+									src={AppleLogo}
+									width={80}
+									height={80}
+									alt="Logo"
+									className="rounded-full"
+								/>
+								<div className="mb-2 mt-2">
+									<div className="flex items-center gap-1">
+										<p className="text-sm">Apple</p>
+										<Image
+											src={BlueCheckmark}
+											width={14}
+											height={14}
+											alt="Logo"
+											className="rounded-full"
+										/>
+									</div>
+									<p className="text-xs text-[#777]">
+										Apple Inc
+									</p>
+								</div>
+
+								<button className="border border-[#333]  text-xs px-8 py-1.5 w-full rounded-lg">
+									Follow
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div className="border border-[#222]"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
