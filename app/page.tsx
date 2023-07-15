@@ -50,7 +50,7 @@ export default function Home() {
 						publishTime="10m"
 						totalReplies="18,257"
 						totalLikes="104,352"
-						isLiked={true}
+						isLiked={false}
 						isVerified={true}
 					/>
 
@@ -62,9 +62,8 @@ export default function Home() {
 						username="sahilbloom"
 						postContent="Don't chase the material things that you thing will make you happy. Chase the freedom that actually will."
 						publishTime="35m"
-						totalReplies="467"
 						totalLikes="4,352"
-						isLiked={false}
+						isLiked={true}
 						isVerified={true}
 						isReposted={true}
 						repostedBy="maiwandstoman"
@@ -175,7 +174,7 @@ export default function Home() {
 
 								<div className="flex gap-4 mt-3">
 									<a href="#">
-										<FiHeart className="fill-red-600 text-red-600" />
+										<FiHeart className="text-gray-100" />
 									</a>
 									<a href="#">
 										<FiMessageCircle className="text-gray-100 -rotate-90" />
@@ -279,7 +278,6 @@ export default function Home() {
 						username="moalem_design"
 						postContent="Is ChatGPT here to help us or rather make us more lazy?"
 						publishTime="18h"
-						totalReplies="345"
 						totalLikes="892"
 						isLiked={true}
 						isVerified={false}

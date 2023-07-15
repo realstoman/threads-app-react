@@ -11,6 +11,7 @@ import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import cn from 'classnames';
 
 interface PostType {
 	avatar: any;
@@ -52,7 +53,13 @@ const Post = ({
 				''
 			)}
 			<div className="flex justify-start gap-8">
-				<div className="relative border-l-2 border-[#444] ml-2">
+				<div
+					className={cn(
+						totalReplies
+							? 'relative border-l-2 border-[#444] ml-2'
+							: 'relative ml-2.5'
+					)}
+				>
 					<div className="flex -ml-7 flex-col w-14 h-full justify-between items-center shrink-0 absolute">
 						<div>
 							<Image
@@ -63,15 +70,19 @@ const Post = ({
 								className="rounded-full"
 							/>
 						</div>
-						<div className="flex flex-col justify-center items-center">
-							<Image
-								src={RonaldoAvatar}
-								width={14}
-								height={14}
-								alt="Account Avatar"
-								className="rounded-full"
-							/>
-						</div>
+						{totalReplies ? (
+							<div className="flex flex-col justify-center items-center">
+								<Image
+									src={RonaldoAvatar}
+									width={14}
+									height={14}
+									alt="Account Avatar"
+									className="rounded-full"
+								/>
+							</div>
+						) : (
+							''
+						)}
 					</div>
 				</div>
 				<div className="flex flex-col w-full">
