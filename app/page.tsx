@@ -22,6 +22,8 @@ import {
 } from 'react-icons/fi';
 import Post from '@/components/Post';
 import PageWrapper from '@/components/PageWrapper';
+import YusufAvatar from '@/public/avatars/hamza-yusuf-avatar.png';
+import MoalemAvatar from '@/public/avatars/moalem-avatar.jpg';
 
 export default function Home() {
 	return (
@@ -42,7 +44,6 @@ export default function Home() {
 						totalLikes="104,352"
 						isLiked={true}
 						isVerified={true}
-						mentions=""
 					/>
 
 					<div className="border border-[#222]"></div>
@@ -57,7 +58,6 @@ export default function Home() {
 						totalLikes="4,352"
 						isLiked={false}
 						isVerified={true}
-						mentions=""
 						isReposted={true}
 						repostedBy="maiwandstoman"
 					/>
@@ -187,6 +187,53 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+
+					<div className="border border-[#222]"></div>
+
+					{/* Single Dynamic Post */}
+					<Post
+						avatar={RonaldoAvatar}
+						username="cristiano"
+						postContent="Family should be the most important people in your life. They are the only people with you in the good and moments and in the bad moments."
+						publishTime="5h"
+						totalReplies="13,786"
+						totalLikes="65,980"
+						isLiked={true}
+						isVerified={true}
+						isReposted={true}
+						repostedBy="rashidkhan"
+					/>
+
+					<div className="border border-[#222]"></div>
+
+					{/* Recommendations */}
+
+					{/* Single Dynamic Post */}
+					<Post
+						avatar={MoalemAvatar}
+						username="moalem_design"
+						postContent="Is ChatGPT here to help us or rather make us more lazy?"
+						publishTime="18h"
+						totalReplies="345"
+						totalLikes="892"
+						isLiked={true}
+						isVerified={false}
+					/>
+
+					<div className="border border-[#222]"></div>
+
+					{/* Single Dynamic Post */}
+					<Post
+						avatar={YusufAvatar}
+						username="hamzayusuf"
+						postContent="The heart also needs to breathe, and the breath of heart is none other than the remembrance of God."
+						publishTime="1d"
+						totalReplies="650"
+						totalLikes="2743"
+						isLiked={false}
+						isVerified={true}
+					/>
+
 					<div className="border border-[#222]"></div>
 				</div>
 			</div>

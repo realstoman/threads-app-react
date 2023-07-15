@@ -229,7 +229,7 @@ const profile = () => {
 						<Reply
 							avatar={MoalemAvatar}
 							username="moalem_design"
-							postContent="People will spend 8 hours a day on their phone, never work out and spend no time building something meaningful and then wonder why they feel like shit."
+							postContent="Is ChatGPT here to help us or rather make us more lazy?"
 							publishTime="20m"
 							replyContent="ChatGPT is a handy AI technology and I’m also using it when I need it. It’s great for suggestions and recommendations, but it shouldn’t be used for the things that you can do them yourself. Never be dependent on any of these technologies. I suggest to use ChatGPT only when you have to."
 							totalPostReplies="50"

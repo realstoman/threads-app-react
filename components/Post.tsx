@@ -57,8 +57,8 @@ const Post = ({
 						<div>
 							<Image
 								src={avatar}
-								width={40}
-								height={40}
+								width={35}
+								height={35}
 								alt="Account Avatar"
 								className="rounded-full"
 							/>
