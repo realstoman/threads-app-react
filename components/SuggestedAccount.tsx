@@ -16,7 +16,7 @@ const SuggestedAccount = ({
 	fullName,
 }: SuggestedAccountType) => {
 	return (
-		<div className="card flex flex-col items-center justify-center border border-[#222] rounded-xl px-4 pt-1 pb-2">
+		<div className="card flex flex-col items-center justify-center border border-[#222] rounded-xl text-center px-5 pt-1 pb-2 bg-[#000]">
 			<FiX className="w-4 font-bold self-end text-[#777]" />
 			<Image
 				src={avatar}

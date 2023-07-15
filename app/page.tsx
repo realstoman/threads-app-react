@@ -26,6 +26,12 @@ import PageWrapper from '@/components/PageWrapper';
 import YusufAvatar from '@/public/avatars/hamza-yusuf-avatar.png';
 import MoalemAvatar from '@/public/avatars/moalem-avatar.jpg';
 import AppleLogo from '@/public/logo/apple-logo.jpg';
+import SuggestedAccount from '@/components/SuggestedAccount';
+import SmashingMagLogo from '@/public/logo/smashing-magazine-logo.jpg';
+import AlokozayLogo from '@/public/logo/alokozay-logo.jpg';
+import RealMadridLogo from '@/public/logo/real-madrid-logo.jpg';
+import GoogleLogo from '@/public/logo/google-logo.jpg';
+import NikeLogo from '@/public/logo/nike-logo.jpg';
 
 export default function Home() {
 	return (
@@ -35,7 +41,7 @@ export default function Home() {
 					<Image src={Logo} width={35} height={35} alt="Logo" />
 				</header>
 
-				<div>
+				<div className="w-full">
 					{/* Single Dynamic Post */}
 					<Post
 						avatar={ZuckAvatar}
@@ -209,40 +215,59 @@ export default function Home() {
 					<div className="border border-[#222]"></div>
 
 					{/* Recommendations */}
-					<div className="px-4 my-2">
+					<div className="px-4 my-2 w-full">
 						<h2 className="text-sm text-gray-200">
 							Suggested for you
 						</h2>
-						<div className="flex mt-2">
-							<div className="card flex flex-col items-center justify-center border border-[#222] rounded-xl px-4 pt-1 pb-2">
-								<FiX className="w-4 font-bold self-end text-[#777]" />
-								<Image
-									src={AppleLogo}
-									width={80}
-									height={80}
-									alt="Logo"
-									className="rounded-full"
-								/>
-								<div className="mb-2 mt-2">
-									<div className="flex items-center gap-1">
-										<p className="text-sm">Apple</p>
-										<Image
-											src={BlueCheckmark}
-											width={14}
-											height={14}
-											alt="Logo"
-											className="rounded-full"
-										/>
-									</div>
-									<p className="text-xs text-[#777]">
-										Apple Inc
-									</p>
-								</div>
+						<div className="flex justify-start gap-1 overflow-x-scroll mt-2">
+							<SuggestedAccount
+								avatar={AppleLogo}
+								username="apple"
+								fullName="Apple Inc"
+								isVerified={true}
+							/>
 
-								<button className="border border-[#333]  text-xs px-8 py-1.5 w-full rounded-lg">
-									Follow
-								</button>
-							</div>
+							<SuggestedAccount
+								avatar={AlokozayLogo}
+								username="alokozay"
+								fullName="Alokozay Group"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={NikeLogo}
+								username="nike"
+								fullName="Nike"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={SmashingMagLogo}
+								username="smashingmag"
+								fullName="Smashing Maga..."
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={RealMadridLogo}
+								username="realmadrid"
+								fullName="Real Madrid"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={GoogleLogo}
+								username="google"
+								fullName="Google Inc"
+								isVerified={true}
+							/>
+
+							<SuggestedAccount
+								avatar={UnsplashLogo}
+								username="unsplash"
+								fullName="Unsplash Stock"
+								isVerified={true}
+							/>
 						</div>
 					</div>
 
