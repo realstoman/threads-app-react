@@ -18,7 +18,7 @@ import NikeLogo from '@/public/logo/nike-logo.jpg';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import JackAvatar from '@/public/avatars/jack-dorsey-avatar.jpg';
 import 'flowbite';
-import ProfileBio from './ProfileBio';
+import ProfileBio from '../../components/profile/ProfileBio';
 import Post from '@/components/Post';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import ProjectImage1 from '@/public/projects/project-1.jpg';
