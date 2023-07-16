@@ -16,9 +16,13 @@ const activity = () => {
 		<PageWrapper>
 			<div className="pt-5 pb-16 flex flex-col items-center overflow-y-scroll">
 				{/* Header section */}
-				<header className="mb-3 px-4 w-full scroll-mb-2">
-					<h1 className="text-4xl font-semibold mb-3">Activity</h1>
-					<div className="flex justify-start gap-2 overflow-x-scroll scroll-smooth scroll-p-5">
+				<header className="mb-3 w-full scroll-mb-2">
+					<div className="px-4">
+						<h1 className="text-4xl font-semibold mb-3">
+							Activity
+						</h1>
+					</div>
+					<div className="flex justify-start px-4 gap-2 overflow-x-scroll scroll-smooth scroll-p-5">
 						<button className="border border-white bg-white text-black text-xs px-8 py-1.5 rounded-lg">
 							All
 						</button>

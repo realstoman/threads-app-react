@@ -212,11 +212,13 @@ export default function Home() {
 					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Recommendations */}
-					<div className="px-4 my-2 w-full">
-						<h2 className="text-sm text-gray-200">
-							Suggested for you
-						</h2>
-						<div className="flex justify-start gap-1 overflow-x-scroll mt-2 scroll-smooth scroll-pt-2">
+					<div className="my-2 w-full">
+						<div className="px-4">
+							<h2 className="text-sm text-gray-200">
+								Suggested for you
+							</h2>
+						</div>
+						<div className="flex justify-start gap-1 overflow-x-scroll mt-2 px-4 scroll-smooth scroll-pt-2">
 							<SuggestedAccount
 								avatar={AppleLogo}
 								username="apple"
