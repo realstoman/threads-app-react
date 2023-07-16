@@ -131,7 +131,7 @@ export default function Home() {
 											@realstoman
 										</span>
 									</p>
-									<div className="mt-2 flex justify-start gap-1.5 overflow-x-scroll">
+									<div className="mt-2 flex justify-start gap-1.5 overflow-x-scroll scroll-smooth">
 										<Image
 											src={PineapplePhoto}
 											alt="Author"
@@ -216,7 +216,7 @@ export default function Home() {
 						<h2 className="text-sm text-gray-200">
 							Suggested for you
 						</h2>
-						<div className="flex justify-start gap-1 overflow-x-scroll mt-2">
+						<div className="flex justify-start gap-1 overflow-x-scroll mt-2 scroll-smooth scroll-pt-2">
 							<SuggestedAccount
 								avatar={AppleLogo}
 								username="apple"
