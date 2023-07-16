@@ -11,7 +11,6 @@ import {
 } from 'react-icons/fi';
 import StomanProfile from '@/public/avatars/stoman-avatar.jpg';
 import Avatar1 from '@/public/avatars/avatar-1.jpeg';
-import NikeLogo from '@/public/logo/nike-logo.jpg';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import JackAvatar from '@/public/avatars/jack-dorsey-avatar.jpg';
 import 'flowbite';
@@ -88,11 +87,10 @@ const profile = () => {
 							username="realstoman"
 							postContent="Can't say no to programming, design, coffee and some football."
 							publishTime="45m"
-							totalReplies="467"
 							totalLikes="4,352"
 						/>
 
-						<div className="border border-[#222]"></div>
+						<div className="border border-[#222] border-opacity-50"></div>
 
 						<Post
 							avatar={JackAvatar}
@@ -106,7 +104,7 @@ const profile = () => {
 							repostedBy="You"
 						/>
 
-						<div className="border border-[#222]"></div>
+						<div className="border border-[#222] border-opacity-50"></div>
 
 						{/* Single Carousel Post */}
 						<div className="flex px-4 gap-8 my-4">
@@ -214,7 +212,7 @@ const profile = () => {
 								</div>
 							</div>
 						</div>
-						<div className="border border-[#222]"></div>
+						<div className="border border-[#222] border-opacity-50"></div>
 					</div>
 					<div
 						className="hidden"
@@ -238,7 +236,7 @@ const profile = () => {
 							isLiked={true}
 						/>
 
-						<div className="border border-[#222]"></div>
+						<div className="border border-[#222] border-opacity-50"></div>
 
 						<Reply
 							avatar={JackAvatar}
@@ -255,7 +253,7 @@ const profile = () => {
 							totalReplyReplies="72"
 						/>
 
-						<div className="border border-[#222]"></div>
+						<div className="border border-[#222] border-opacity-50"></div>
 
 						<Reply
 							avatar={Avatar4}
@@ -272,7 +270,7 @@ const profile = () => {
 							totalReplyReplies="2"
 							isLiked={true}
 						/>
-						<div className="border border-[#222]"></div>
+						<div className="border border-[#222] border-opacity-50"></div>
 					</div>
 				</div>
 			</div>

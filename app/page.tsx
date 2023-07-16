@@ -52,7 +52,7 @@ export default function Home() {
 						isVerified={true}
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -67,7 +67,7 @@ export default function Home() {
 						repostedBy="maiwandstoman"
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Carousel Post */}
 					<div className="flex px-4 gap-8 my-4">
@@ -193,7 +193,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -209,7 +209,7 @@ export default function Home() {
 						repostedBy="rashidkhan"
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Recommendations */}
 					<div className="px-4 my-2 w-full">
@@ -268,7 +268,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -281,7 +281,7 @@ export default function Home() {
 						isVerified={false}
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -295,7 +295,7 @@ export default function Home() {
 						isVerified={true}
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 				</div>
 			</div>
 		</PageWrapper>

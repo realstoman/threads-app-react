@@ -17,7 +17,7 @@ const activity = () => {
 			<div className="pt-5 pb-16 flex flex-col items-center overflow-y-scroll">
 				{/* Header section */}
 				<header className="mb-3 px-4 w-full scroll-mb-2">
-					<h1 className="text-4xl font-semibold mb-2">Activity</h1>
+					<h1 className="text-4xl font-semibold mb-3">Activity</h1>
 					<div className="flex justify-start gap-2 overflow-x-scroll scroll-smooth scroll-p-5">
 						<button className="border border-white bg-white text-black text-xs px-8 py-1.5 rounded-lg">
 							All
@@ -44,7 +44,7 @@ const activity = () => {
 					activityContent="When you're the only developer in a busi..."
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={ZuckAvatar}
@@ -56,7 +56,7 @@ const activity = () => {
 					userReply="Exactly, if you look closely, even we didn't added the edit functionality like the Twitter app LOL"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={Avatar4}
@@ -67,7 +67,7 @@ const activity = () => {
 					activityContent="Focus"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={Avatar2}
@@ -78,7 +78,7 @@ const activity = () => {
 					activityContent="Followed you"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={Avatar3}
@@ -89,7 +89,7 @@ const activity = () => {
 					activityContent="Followed you"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={GeekAvatar}
@@ -101,7 +101,7 @@ const activity = () => {
 					userReply="I never thought that Ctrl + C & Ctrl + V is also a programming, until the Threads was launched."
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={NikeLogo}
@@ -112,7 +112,7 @@ const activity = () => {
 					activityContent="Focusing on the things that are within..."
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={SahilAvatar}
@@ -123,7 +123,7 @@ const activity = () => {
 					activityContent="Focusing on the things that are within..."
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 			</div>
 		</PageWrapper>
 	);
