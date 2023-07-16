@@ -91,7 +91,7 @@ const Navigation = () => {
 								<div className="px-4 py-6 flex w-full gap-2">
 									<div className=" ml-2">
 										<div className="relative border-l-2 border-[#333] border-opacity-70 ml-2">
-											<div className="flex -ml-7 flex-col w-14 h-36 max-h-36 justify-between items-center">
+											<div className="flex -ml-7 flex-col w-14 h-28 max-h-28 justify-between items-center">
 												<div>
 													<Image
 														src={StomanAvatar}

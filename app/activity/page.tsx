@@ -22,7 +22,7 @@ const activity = () => {
 							Activity
 						</h1>
 					</div>
-					<div className="flex justify-start px-4 gap-2 overflow-x-scroll scroll-smooth scroll-p-5">
+					<div className="flex justify-start px-4 gap-2 overflow-x-scroll scroll-smooth scroll-m-2 scroll-p-4">
 						<button className="border border-white bg-white text-black text-xs px-8 py-1.5 rounded-lg">
 							All
 						</button>
