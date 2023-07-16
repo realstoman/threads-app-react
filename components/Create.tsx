@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button, Modal } from 'flowbite-react';
 import 'flowbite';
 import { FiPaperclip, FiX } from 'react-icons/fi';
 import Image from 'next/image';

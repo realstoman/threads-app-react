@@ -11,7 +11,7 @@ import {
 	FiX,
 } from 'react-icons/fi';
 import 'flowbite';
-import { Button, Modal } from 'flowbite-react';
+import { Modal } from 'flowbite-react';
 import { useState } from 'react';
 import Image from 'next/image';
 import StomanAvatar from '@/public/avatars/stoman-avatar.jpg';
@@ -63,10 +63,8 @@ const Navigation = () => {
 				show={props.openModal === 'default'}
 				onClose={() => props.setOpenModal(undefined)}
 			>
-				{/* <Modal.Header>Terms of Service</Modal.Header> */}
 				<Modal.Body className="fixed bottom-0 left-0 w-full  overflow-x-hidden overflow-y-auto p-0">
 					<div className="relative max-w-md">
-						{/* <!-- Modal content --> */}
 						<div className="relative rounded-t-lg h-[500px] bg-[#222] text-gray-100">
 							<div className="border-b border-[#333]">
 								<div className="grid grid-cols-8 py-3 px-4">
