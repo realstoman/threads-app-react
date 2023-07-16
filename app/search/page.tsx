@@ -45,7 +45,7 @@ const search = () => {
 					followersCount="2m"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				{/* Dynamic Search Account */}
 				<UserAccount
@@ -57,7 +57,7 @@ const search = () => {
 					followersCount="780k"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={AlokozayLogo}
@@ -67,7 +67,7 @@ const search = () => {
 					followersCount="10m"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={RonaldoAvatar}
@@ -79,7 +79,7 @@ const search = () => {
 					followedByAnother={SalahAvatar}
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={SmashingMagLogo}
@@ -91,7 +91,7 @@ const search = () => {
 					followedByAnother={GoogleLogo}
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={RashidAvatar}
@@ -103,7 +103,7 @@ const search = () => {
 					followedByAnother={RonaldoAvatar}
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={NikeLogo}
@@ -114,7 +114,7 @@ const search = () => {
 					followedBy={RealMadridLogo}
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={GoogleLogo}
@@ -125,7 +125,7 @@ const search = () => {
 					followedBy={AppleLogo}
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={ZuckAvatar}
@@ -136,7 +136,7 @@ const search = () => {
 					followedBy={SmashingMagLogo}
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={RealMadridLogo}
@@ -148,7 +148,7 @@ const search = () => {
 					followedByAnother={NikeLogo}
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 
 				<UserAccount
 					avatar={SalahAvatar}
@@ -160,7 +160,7 @@ const search = () => {
 					followedByAnother={NikeLogo}
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-50 w-full"></div>
 			</div>
 		</PageWrapper>
 	);

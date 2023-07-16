@@ -2,10 +2,12 @@
 
 import PageWrapper from '@/components/PageWrapper';
 import UserActivity from '@/components/activity/UserActivity';
-
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import ZuckAvatar from '@/public/avatars/zuck-avatar.jpg';
-// import Avatar4 from '@public/avatars/avatar-4.jpg';
+import Avatar4 from '@/public/avatars/avatar-4.jpg';
+import Avatar2 from '@/public/avatars/avatar-2.jpg';
+import Avatar3 from '@/public/avatars/avatar-3.jpg';
+import SahilAvatar from '@/public/avatars/sahil-bloom-avatar.jpg';
 import NikeLogo from '@/public/logo/nike-logo.jpg';
 import GeekAvatar from '@/public/avatars/avatar-1.jpeg';
 
@@ -14,9 +16,13 @@ const activity = () => {
 		<PageWrapper>
 			<div className="pt-5 pb-16 flex flex-col items-center overflow-y-scroll">
 				{/* Header section */}
-				<header className="mb-3 px-4 w-full">
-					<h1 className="text-4xl font-semibold mb-2">Activity</h1>
-					<div className="flex justify-start gap-2 overflow-x-scroll">
+				<header className="mb-3 w-full scroll-mb-2">
+					<div className="px-4">
+						<h1 className="text-4xl font-semibold mb-3">
+							Activity
+						</h1>
+					</div>
+					<div className="flex justify-start px-4 gap-2 overflow-x-scroll scroll-smooth scroll-p-5">
 						<button className="border border-white bg-white text-black text-xs px-8 py-1.5 rounded-lg">
 							All
 						</button>
@@ -42,7 +48,7 @@ const activity = () => {
 					activityContent="When you're the only developer in a busi..."
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={ZuckAvatar}
@@ -54,10 +60,10 @@ const activity = () => {
 					userReply="Exactly, if you look closely, even we didn't added the edit functionality like the Twitter app LOL"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
-					avatar={ZuckAvatar}
+					avatar={Avatar4}
 					activityType="like"
 					username="ahmadkhan"
 					isVerified={false}
@@ -65,10 +71,10 @@ const activity = () => {
 					activityContent="Focus"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
-					avatar={RonaldoAvatar}
+					avatar={Avatar2}
 					activityType="follow"
 					username="taylorswift"
 					isVerified={true}
@@ -76,10 +82,10 @@ const activity = () => {
 					activityContent="Followed you"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
-					avatar={RonaldoAvatar}
+					avatar={Avatar3}
 					activityType="follow"
 					username="yahabibi"
 					isVerified={true}
@@ -87,41 +93,41 @@ const activity = () => {
 					activityContent="Followed you"
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={GeekAvatar}
 					activityType="reply"
 					username="yrashidkhan01"
 					isVerified={false}
-					activityTime="2h"
+					activityTime="2d"
 					activityContent="but it's smoother than Twitter tbh"
 					userReply="I never thought that Ctrl + C & Ctrl + V is also a programming, until the Threads was launched."
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
 					avatar={NikeLogo}
 					activityType="like"
 					username="nike"
 					isVerified={true}
-					activityTime="2d"
+					activityTime="3d"
 					activityContent="Focusing on the things that are within..."
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 
 				<UserActivity
-					avatar={RonaldoAvatar}
+					avatar={SahilAvatar}
 					activityType="like"
 					username="sahilbloom"
 					isVerified={true}
-					activityTime="2d"
+					activityTime="3d"
 					activityContent="Focusing on the things that are within..."
 				/>
 
-				<div className="border border-[#222] w-full"></div>
+				<div className="border border-[#222] border-opacity-70 w-full"></div>
 			</div>
 		</PageWrapper>
 	);

@@ -52,7 +52,7 @@ export default function Home() {
 						isVerified={true}
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -67,11 +67,11 @@ export default function Home() {
 						repostedBy="maiwandstoman"
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Carousel Post */}
 					<div className="flex px-4 gap-8 my-4">
-						<div className="relative border-l-2 border-[#444] ml-2">
+						<div className="relative border-l-2 border-[#333] border-opacity-70 ml-2">
 							<div className="flex -ml-7 flex-col w-14 h-full justify-between items-center shrink-0 absolute">
 								<div className="">
 									<Image
@@ -131,7 +131,7 @@ export default function Home() {
 											@realstoman
 										</span>
 									</p>
-									<div className="mt-2 flex justify-start gap-1.5 overflow-x-scroll">
+									<div className="mt-2 flex justify-start gap-1.5 overflow-x-scroll scroll-smooth">
 										<Image
 											src={PineapplePhoto}
 											alt="Author"
@@ -193,7 +193,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -209,14 +209,16 @@ export default function Home() {
 						repostedBy="rashidkhan"
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Recommendations */}
-					<div className="px-4 my-2 w-full">
-						<h2 className="text-sm text-gray-200">
-							Suggested for you
-						</h2>
-						<div className="flex justify-start gap-1 overflow-x-scroll mt-2">
+					<div className="my-2 w-full">
+						<div className="px-4">
+							<h2 className="text-sm text-gray-200">
+								Suggested for you
+							</h2>
+						</div>
+						<div className="flex justify-start gap-1 overflow-x-scroll mt-2 px-4 scroll-smooth scroll-pt-2">
 							<SuggestedAccount
 								avatar={AppleLogo}
 								username="apple"
@@ -268,7 +270,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -281,7 +283,7 @@ export default function Home() {
 						isVerified={false}
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 
 					{/* Single Dynamic Post */}
 					<Post
@@ -295,7 +297,7 @@ export default function Home() {
 						isVerified={true}
 					/>
 
-					<div className="border border-[#222]"></div>
+					<div className="border border-[#222] border-opacity-50"></div>
 				</div>
 			</div>
 		</PageWrapper>

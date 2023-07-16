@@ -45,7 +45,7 @@ const Post = ({
 	return (
 		<div className="px-4 my-4 w-full font-sans">
 			{isReposted ? (
-				<div className="flex justify-start items-center gap-2 ml-4 text-xs mb-1 text-[#666]">
+				<div className="flex justify-start items-center gap-2 ml-4 text-xs mb-1 text-[#777]">
 					<FiRepeat className="-rotate-12 sm:text-xl" />
 					<span>{repostedBy} reposted</span>
 				</div>
@@ -56,7 +56,7 @@ const Post = ({
 				<div
 					className={cn(
 						totalReplies
-							? 'relative border-l-2 border-[#444] ml-2'
+							? 'relative border-l-2 border-[#333] border-opacity-70 ml-2'
 							: 'relative ml-2.5'
 					)}
 				>
