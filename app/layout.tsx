@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Footer from '@/components/Footer';
+import 'flowbite';
 
 const inter = Inter({ subsets: ['latin'] });
 

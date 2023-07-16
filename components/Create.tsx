@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'flowbite';
 import { FiPaperclip, FiX } from 'react-icons/fi';
 import Image from 'next/image';
 import StomanAvatar from '@/public/avatars/stoman-avatar.jpg';
 
 const Create = () => {
+	const [openModal, setOpenModal] = useState<string | undefined>();
+	const props = { openModal, setOpenModal };
+
 	return (
 		<div
 			id="create-post-modal"
