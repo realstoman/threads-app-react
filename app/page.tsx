@@ -91,7 +91,7 @@ export default function Home() {
 										className="rounded-full"
 									/>
 									<Image
-										src={ZuckAvatar}
+										src={RonaldoAvatar}
 										width={12}
 										height={12}
 										alt="Logo"
