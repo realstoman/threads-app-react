@@ -7,7 +7,6 @@ import {
 	FiNavigation,
 	FiRepeat,
 } from 'react-icons/fi';
-import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import StomanAvatar from '@/public/avatars/stoman-avatar.jpg';
 
@@ -28,6 +27,7 @@ interface ReplyType {
 	totalPostLikes?: string;
 	totalReplyReplies?: string;
 	totalReplyLikes?: string;
+	repliedByMutual?: any;
 }
 
 const Reply = ({
@@ -46,11 +46,12 @@ const Reply = ({
 	totalPostLikes,
 	totalReplyReplies,
 	totalReplyLikes,
+	repliedByMutual,
 }: ReplyType) => {
 	return (
 		<div className="px-4 my-4 font-sans">
 			<div className="flex justify-start gap-8">
-				<div className="relative border-l-2 border-[#444] ml-2">
+				<div className="relative border-l-2 border-[#333] border-opacity-70 ml-2">
 					<div className="flex -ml-7 flex-col w-14 h-full justify-between items-center shrink-0 absolute">
 						<div>
 							<Image
@@ -61,15 +62,6 @@ const Reply = ({
 								className="rounded-full"
 							/>
 						</div>
-						{/* <div className="flex flex-col justify-center items-center">
-							<Image
-								src={StomanAvatar}
-								width={32}
-								height={32}
-								alt="Account Avatar"
-								className="rounded-full"
-							/>
-						</div> */}
 					</div>
 				</div>
 				<div className="flex flex-col w-full">
@@ -141,6 +133,20 @@ const Reply = ({
 							</button>
 						</div>
 						<div className="flex items-start gap-2 text-gray-500 mt-4 text-xs sm:text-[14px] text-center">
+							{repliedByMutual ? (
+								<div className="flex flex-col justify-center items-center">
+									<Image
+										src={repliedByMutual}
+										width={14}
+										height={14}
+										alt="Account Avatar"
+										className="rounded-full"
+									/>
+								</div>
+							) : (
+								''
+							)}
+
 							{totalPostReplies ? (
 								<p>{totalPostReplies} replies</p>
 							) : (

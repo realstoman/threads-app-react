@@ -56,7 +56,7 @@ const Post = ({
 				<div
 					className={cn(
 						totalReplies
-							? 'relative border-l-2 border-[#444] ml-2'
+							? 'relative border-l-2 border-[#333] border-opacity-70 ml-2'
 							: 'relative ml-2.5'
 					)}
 				>
