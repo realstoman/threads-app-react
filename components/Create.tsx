@@ -8,6 +8,7 @@ const Create = () => {
 	return (
 		<div
 			id="create-post-modal"
+			data-modal-backdrop="static"
 			tabIndex={-1}
 			aria-hidden="true"
 			className="fixed bottom-0 left-0 z-50 hidden w-full  overflow-x-hidden overflow-y-auto p-0"
