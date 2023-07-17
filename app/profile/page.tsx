@@ -13,7 +13,6 @@ import StomanProfile from '@/public/avatars/stoman-avatar.jpg';
 import Avatar1 from '@/public/avatars/avatar-1.jpeg';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import JackAvatar from '@/public/avatars/jack-dorsey-avatar.jpg';
-import 'flowbite';
 import { Tabs } from 'flowbite-react';
 import ProfileBio from '../../components/profile/ProfileBio';
 import Post from '@/components/Post';
