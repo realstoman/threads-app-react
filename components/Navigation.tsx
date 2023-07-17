@@ -10,7 +10,6 @@ import {
 	FiUser,
 	FiX,
 } from 'react-icons/fi';
-import 'flowbite';
 import { Modal } from 'flowbite-react';
 import { useState } from 'react';
 import Image from 'next/image';
