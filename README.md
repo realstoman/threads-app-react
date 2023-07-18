@@ -1,6 +1,6 @@
 # Threads App
 
-This is a simple project where I designed the important parts of the newly launched app Threads by Meta. It's coded using React, Next.js, TypeScript and Tailwind CSS. Currently it's just the dynamic UI, but soon I'll power this using a NoSQL database like MonogDB, PlanetScale or Google Firebase.
+This is a simple project where I designed the important parts of the newly launched app [Threads](https://www.threads.net/) by [Meta](https://www.meta.com/). It's coded using React, Next.js, TypeScript and Tailwind CSS. Currently it's just the dynamic UI, but soon I'll power this using a NoSQL database like MonogDB, PlanetScale or Google Firebase.
 
 ![Threads App Banner Image](https://github.com/coredns/coredns/assets/16396664/cba4c52c-6310-4581-bce7-e36e21fa6e70)
 
