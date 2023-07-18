@@ -30,13 +30,20 @@ import AlokozayLogo from '@/public/logo/alokozay-logo.jpg';
 import RealMadridLogo from '@/public/logo/real-madrid-logo.jpg';
 import GoogleLogo from '@/public/logo/google-logo.jpg';
 import NikeLogo from '@/public/logo/nike-logo.jpg';
+import { motion } from 'framer-motion';
 
 export default function Home() {
 	return (
 		<PageWrapper>
 			<div className="pt-5 pb-16 flex flex-col items-center overflow-y-scroll">
 				<header className="flex justify-center pt-0 pb-0">
-					<Image src={Logo} width={35} height={35} alt="Logo" />
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ ease: 'easeIn', duration: 1 }}
+					>
+						<Image src={Logo} width={35} height={35} alt="Logo" />
+					</motion.div>
 				</header>
 
 				<div className="w-full">
