@@ -66,7 +66,7 @@ const ProfileBio = () => {
 
 				<p className="text-xs text-gray-300">
 					Talks about programming, philosophy, design. Always a
-					student. Working on something new.
+					student. Working on something new 🪐
 				</p>
 			</div>
 
@@ -126,34 +126,31 @@ const ProfileBio = () => {
 			</div>
 
 			{/* Modal */}
-			<div className="flex justify-center items-center flex-col">
-				<Modal
-					show={props.openModal === 'pop-up'}
-					size="md"
-					popup
-					onClose={() => props.setOpenModal(undefined)}
-				>
-					<Modal.Body className="pt-6 bg-[#000] flex justify-center items-center rounded-md">
-						<div className="text-center">
-							<FiCoffee className="mx-auto mb-4 h-14 w-14 text-green-500" />
-							<h3 className="mb-5 text-lg font-normal text-gray-200">
-								This section will be added soon
-							</h3>
-							<div className="flex justify-center gap-4">
-								<button
-									onClick={() =>
-										props.setOpenModal(undefined)
-									}
-									className="border border-[#333]  text-sm px-8 py-1.5 rounded-lg flex justify-center items-center"
-								>
-									Ok, cool{' '}
-									<FiCheck className="text-green-500 ml-2 text-lg" />
-								</button>
-							</div>
+			<Modal
+				show={props.openModal === 'pop-up'}
+				size="sm"
+				popup
+				position="center"
+				onClose={() => props.setOpenModal(undefined)}
+			>
+				<Modal.Body className="pt-6 bg-[#000] flex justify-center items-center rounded-md">
+					<div className="text-center">
+						<FiCoffee className="mx-auto mb-4 h-14 w-14 text-green-500" />
+						<h3 className="mb-5 text-lg font-normal text-gray-200">
+							This section will be added soon 🥳
+						</h3>
+						<div className="flex justify-center gap-4">
+							<button
+								onClick={() => props.setOpenModal(undefined)}
+								className="border border-[#333]  text-sm px-8 py-1.5 rounded-lg flex justify-center items-center"
+							>
+								Ok, cool{' '}
+								<FiCheck className="text-green-500 ml-2 text-lg" />
+							</button>
 						</div>
-					</Modal.Body>
-				</Modal>
-			</div>
+					</div>
+				</Modal.Body>
+			</Modal>
 		</>
 	);
 };
