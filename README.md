@@ -6,7 +6,7 @@ This is a simple project where I designed the important parts of the newly launc
 
 ## Demo URL
 
-[https://threads-app-react.vercel.com](https://threads-app-react.vercel.com)
+[https://threads-app-react.vercel.app](https://threads-app-react.vercel.app)
 
 ## Other versions of this project
 
