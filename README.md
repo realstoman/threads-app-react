@@ -2,7 +2,7 @@
 
 This is a simple project where I designed the important parts of the newly launched app Threads by Meta. It's coded using React, Next.js, TypeScript and Tailwind CSS. Currently it's just the dynamic UI, but soon I'll power this using a NoSQL database like MonogDB, PlanetScale or Google Firebase.
 
-![Vuejs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/140909796-815239e4-a986-46ad-bbd0-4b166127bbb8.JPG)
+![Threads App UI](https://github.com/rome/tools/assets/16396664/1f29556e-311f-4948-b3a0-85126e0eb43a)
 
 ## Demo URL
 
