@@ -13,7 +13,7 @@ import StomanProfile from '@/public/avatars/stoman-avatar.jpg';
 import Avatar1 from '@/public/avatars/avatar-1.jpeg';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import JackAvatar from '@/public/avatars/jack-dorsey-avatar.jpg';
-import { CustomFlowbiteTheme, Flowbite, Tabs } from 'flowbite-react';
+import { Flowbite, Tabs } from 'flowbite-react';
 import ProfileBio from '../../components/profile/ProfileBio';
 import Post from '@/components/Post';
 import ProjectImage1 from '@/public/projects/project-1.jpg';
@@ -23,32 +23,7 @@ import ProjectImage4 from '@/public/projects/project-4.jpg';
 import Reply from '@/components/profile/Reply';
 import MoalemAvatar from '@/public/avatars/moalem-avatar.jpg';
 import Avatar4 from '@/public/avatars/avatar-4.jpg';
-
-// Custom theme colors
-const tabTheme: CustomFlowbiteTheme = {
-	tab: {
-		base: 'flex flex-col gap2 border-none',
-		tablist: {
-			base: 'flex text-center border-b border-gray-200',
-			styles: {
-				underline: 'flex-wrap',
-			},
-			tabitem: {
-				base: 'flex items-center justify-center px-4 pt-0 pb-2 rounded-0 text-sm font-medium first:ml-0 focus:ring-0 focus:outline-none ',
-				styles: {
-					underline: {
-						base: 'rounded-0',
-						active: {
-							on: 'text-gray-200 rounded-0 border-b border-gray-200 active',
-							off: 'border-b border-transparent text-[#666]',
-						},
-					},
-				},
-			},
-		},
-		tabpanel: 'py-1',
-	},
-};
+import tabTheme from '@/utils/TabTheme';
 
 const profile = () => {
 	return (
