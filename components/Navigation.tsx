@@ -176,7 +176,7 @@ const Navigation = () => {
 										</div>
 
 										{/* Footer */}
-										<div className="flex justify-between items-center px-4 bottom-0 right-0 left-0 fixed pb-3">
+										<div className="flex justify-between items-center px-5 bottom-0 right-0 left-0 fixed pb-6">
 											<div className="text-xs text-[#666]">
 												<p>Anyone can reply</p>
 											</div>
