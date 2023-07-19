@@ -57,7 +57,7 @@ const activity = () => {
 					isVerified={true}
 					activityTime="2h"
 					activityContent="Threads is the exact copy past of Twitter ..."
-					userReply="Exactly, if you look closely, even we didn't added the edit functionality like the Twitter app LOL"
+					userReply="Exactly, that's why you can not edit posts here as well. Maybe we will only allow verified/paid accounts to edit posts, the way Twitter is doing it LOL"
 				/>
 
 				<div className="border border-[#222] border-opacity-70 w-full"></div>
