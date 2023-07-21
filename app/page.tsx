@@ -17,7 +17,6 @@ import {
 	FiMoreHorizontal,
 	FiNavigation,
 	FiRepeat,
-	FiX,
 } from 'react-icons/fi';
 import Post from '@/components/Post';
 import PageWrapper from '@/components/PageWrapper';

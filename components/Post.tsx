@@ -6,7 +6,6 @@ import {
 	FiNavigation,
 	FiRepeat,
 } from 'react-icons/fi';
-import ZuckAvatar from '@/public/avatars/zuck-avatar.jpg';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import Image from 'next/image';
