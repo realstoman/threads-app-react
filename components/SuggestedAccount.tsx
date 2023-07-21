@@ -1,13 +1,7 @@
 import Image from 'next/image';
 import { FiX } from 'react-icons/fi';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
-
-interface SuggestedAccountType {
-	avatar: any;
-	username: string;
-	isVerified: boolean;
-	fullName: string;
-}
+import { SuggestedAccountType } from '@/types/AppTypes';
 
 const SuggestedAccount = ({
 	avatar,

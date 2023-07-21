@@ -1,5 +1,6 @@
 import { CustomFlowbiteTheme } from 'flowbite-react';
 
+// Flowbite Components Theme Customizations
 const tabTheme: CustomFlowbiteTheme = {
 	tab: {
 		base: 'flex flex-col gap2 border-none',

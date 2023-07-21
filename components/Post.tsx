@@ -6,27 +6,12 @@ import {
 	FiNavigation,
 	FiRepeat,
 } from 'react-icons/fi';
-import ZuckAvatar from '@/public/avatars/zuck-avatar.jpg';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
-
-interface PostType {
-	avatar: any;
-	username: string;
-	isVerified?: boolean;
-	postContent: string;
-	publishTime: string;
-	mentions?: string;
-	isLiked?: boolean;
-	isReposted?: boolean;
-	repostedBy?: string;
-	carousel?: [] & any;
-	totalReplies?: string;
-	totalLikes?: string;
-}
+import { PostType } from '@/types/AppTypes';
 
 const Post = ({
 	avatar,

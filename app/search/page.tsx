@@ -1,4 +1,5 @@
 'use client';
+
 import PageWrapper from '@/components/PageWrapper';
 import UserAccount from '@/components/search/UserAccount';
 import YusufAvatar from '@/public/avatars/hamza-yusuf-avatar.png';

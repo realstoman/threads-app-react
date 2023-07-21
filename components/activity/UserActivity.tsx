@@ -1,16 +1,7 @@
 import Image from 'next/image';
 import { FiHeart, FiMessageCircle, FiUser } from 'react-icons/fi';
 import BlueCheckMark from '@/public/avatars/blue-checkmark.png';
-
-interface ActivityType {
-	avatar: any;
-	activityType: string;
-	username: string;
-	isVerified?: boolean;
-	activityTime: string;
-	activityContent: string;
-	userReply?: string;
-}
+import { ActivityType } from '@/types/AppTypes';
 
 const UserActivity = ({
 	avatar,
