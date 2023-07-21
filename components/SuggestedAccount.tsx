@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FiX } from 'react-icons/fi';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
-import SuggestedAccountType from '@/types/AppTypes';
+import { SuggestedAccountType } from '@/types/AppTypes';
 
 const SuggestedAccount = ({
 	avatar,

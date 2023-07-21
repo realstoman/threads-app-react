@@ -9,26 +9,7 @@ import {
 } from 'react-icons/fi';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
 import StomanAvatar from '@/public/avatars/stoman-avatar.jpg';
-
-interface ReplyType {
-	avatar: any;
-	username: string;
-	isVerified?: boolean;
-	isAuthorVerified?: boolean;
-	isRepliedTo?: boolean;
-	postContent: string;
-	publishTime: string;
-	mentions?: string;
-	isLiked?: boolean;
-	replyContent: any;
-	repostedBy?: string;
-	pictures?: any;
-	totalPostReplies?: string;
-	totalPostLikes?: string;
-	totalReplyReplies?: string;
-	totalReplyLikes?: string;
-	repliedByMutual?: any;
-}
+import { ReplyType } from '@/types/AppTypes';
 
 const Reply = ({
 	avatar,

@@ -1,15 +1,6 @@
 import Image from 'next/image';
 import BlueCheckmark from '@/public/avatars/blue-checkmark.png';
-
-interface AccountType {
-	avatar: any;
-	username: string;
-	fullName: string;
-	isVerified?: boolean;
-	followedBy?: any;
-	followedByAnother?: any;
-	followersCount: string;
-}
+import { AccountType } from '@/types/AppTypes';
 
 const UserAccount = ({
 	avatar,
