@@ -12,6 +12,7 @@ import Avatar1 from '@/public/avatars/avatar-1.jpeg';
 import NikeLogo from '@/public/logo/nike-logo.jpg';
 import RonaldoAvatar from '@/public/avatars/ronaldo-avatar.jpg';
 import { Modal } from 'flowbite-react';
+import AppConstants from '@/constants/index';
 
 const ProfileBio = () => {
 	const [openModal, setOpenModal] = useState<string | undefined>();
@@ -47,11 +48,13 @@ const ProfileBio = () => {
 			<div className="mb-4">
 				<div className="flex justify-between items-center mb-4">
 					<div className="text-white">
-						<h1 className="text-xl uppercase mb-1">Stoman</h1>
+						<h1 className="text-xl uppercase mb-1">
+							{AppConstants.fullName}
+						</h1>
 						<div className="text-gray-300 flex items-center gap-2">
-							<p className="text-xs">realstoman</p>
+							<p className="text-xs">{AppConstants.userName}</p>
 							<span className="text-[8px] bg-[#444] px-2 py-0.5 rounded-xl text-[#777]">
-								threads.net
+								{AppConstants.threadsBadge}
 							</span>
 						</div>
 					</div>
@@ -64,10 +67,7 @@ const ProfileBio = () => {
 					/>
 				</div>
 
-				<p className="text-xs text-gray-300">
-					Talks about programming, philosophy, design. Always a
-					student. Working on something new 🪐
-				</p>
+				<p className="text-xs text-gray-300">{AppConstants.userBio}</p>
 			</div>
 
 			{/* Followers count */}
@@ -96,14 +96,14 @@ const ProfileBio = () => {
 							alt="Stoman Profile"
 						/>
 					</div>
-					<span>62k followers</span>
+					<span>{AppConstants.followers}</span>
 				</div>
 				<span>.</span>
 				<button
 					type="button"
 					onClick={() => props.setOpenModal('pop-up')}
 				>
-					stoman.me
+					{AppConstants.userUrl}
 				</button>
 			</div>
 
@@ -114,14 +114,14 @@ const ProfileBio = () => {
 					type="button"
 					onClick={() => props.setOpenModal('pop-up')}
 				>
-					Edit profile
+					{AppConstants.editProfile}
 				</button>
 				<button
 					className="border border-[#333] px-12 py-1.5 rounded-lg"
 					type="button"
 					onClick={() => props.setOpenModal('pop-up')}
 				>
-					Share profile
+					{AppConstants.shareProfile}
 				</button>
 			</div>
 
@@ -137,7 +137,7 @@ const ProfileBio = () => {
 					<div className="text-center">
 						<FiCoffee className="mx-auto mb-4 h-14 w-14 text-green-500" />
 						<h3 className="mb-5 text-lg font-normal text-gray-200">
-							This section will be added soon 🥳
+							{AppConstants.featureComingSoonTitle}
 						</h3>
 						<div className="flex justify-center gap-4">
 							<button
